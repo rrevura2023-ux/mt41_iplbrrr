@@ -1,0 +1,10 @@
+.flex-container {
+  display: flex; /* Вмикає режим флексбокс */
+  gap: 20px;     /* Задає відстань між колонками */
+}
+
+.column {
+  flex: 1;       /* Колонки будуть однакової ширини */
+  background-color: #f0f0f0;
+  padding: 15px;
+}
