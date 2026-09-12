@@ -23,17 +23,43 @@ initial-scale=1.0">
             background-attachment: fixed;
             
         }
+
+        header {
+            max-width: 500px;
+        }
         h1, h2, h3, h4, h5, h6 {
             color: #e39b27;
             font-family: "Changa One", sans-serif;
 
         }
-        p {
 
-            color: #ac816a;
+        footer {
+             color: #825431;
              font-family: 'Pliant', sans-serif;
              max-width: 800px;
-        
+             margin: 30px 0;
+        }
+
+        .text-column {
+
+            color: #f0bd6f;
+             font-family: 'Pliant', sans-serif;
+             flex: 1;
+             max-width: 700px;
+             text-align: justify;         /* Вирівнюємо текст по ширині для охайного вигляду */
+
+            background-color: rgb(0, 0, 0);
+            background-position: center;
+            background-image: url("https://img.magnific.com/free-vector/vector-abstract-black-gold-luxury-background_361591-3873.jpg?semt=ais_hybrid&w=740&q=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px; /* Відступи всередині блоку */
+            margin: 10px 0; /* Відступи зовні блоку */
+            border-radius: 10px; /* Закруглені кути */
+            }
+
+            aside {
+                max-width: 500px;
             }
         
         ol, li, a {
@@ -53,7 +79,7 @@ initial-scale=1.0">
 <body>
     <header>
         <h1>Програмування в Internet</h1>
-        <nav>
+        <nav class="text-column">
             <ul>
                 <li><a href="./index.html"><strong>Головна</strong></a></li>
                 <li><a href="#labs"><strong>Лабораторні роботи</strong></a>
@@ -69,14 +95,16 @@ initial-scale=1.0">
     <main>
         <article>
             <h2 id="labs">Лабораторні:</h2>
-            <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime reiciendis obcaecati ipsum nemo
+            <p class="text-column"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime reiciendis obcaecati ipsum nemo
             voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi velit
             quisquam repudiandae!</strong></p>
+            <p class="text-column"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
         </article>
     </main>
 
     <aside>
         <h2>Інші курси:</h2>
+        <div class="text-column">
         <ol>
             <li><a href="./course/c1.html">Cистеми Програмування;</a></li>
             <li><a href="./course/c2.html">База Даних;</a></li>
@@ -84,6 +112,7 @@ initial-scale=1.0">
             <li><a href="./course/c4.html">МОС;</a></li>
             <li><a href="./course/c5.html">ОНС;</a></li>
         </ol>
+        </div>
     </aside>
 
     <footer>
