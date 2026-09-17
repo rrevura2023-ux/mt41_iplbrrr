@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 
 <head>
@@ -7,52 +7,131 @@
 initial-scale=1.0">
     <title>Лабораторна робота 3</title>
     <link rel="stylesheet" href="styles.css">
-    <style> 
-    .subscribe-btn {
+    <style>
+        .subscribe-btn {
 
-background: #000;
- color: #fff; 
- border-radius: 10px; 
- padding: 10px 20px; 
-    }
+            background: #000;
+            color: #fff;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
 
-.subscribe-btn:hover {
-    transition: background 0.3s ease, color 0.3s ease; 
-    background: #fff;
-    color: #000;
-}
-</style>
+        .subscribe-btn:hover {
+            transition: background 0.3s ease, color 0.3s ease;
+            background: #fff;
+            color: #000;
+        }
+
+        .videos {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+
+            a:hover {
+                background-color: #888888;
+                color: #fff;
+                transition: background 0.3s ease, color 0.3s ease;
+            }
+        }
+
+        .videos a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .videos a img {
+            width: 140px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .videos a span {
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>IT коледж Львівської політехніки</h1>
-        <img src="https://itcollege.lviv.ua/wp-content/uploads/2022/01/logo-lit.jpg" alt="logo-it" height="300">
     </header>
-
     <main>
-        <article>
+
+        <section class="image">
+            <img src="https://itcollege.lviv.ua/wp-content/uploads/2022/01/logo-lit.jpg" alt="logo-it" height="300">
+        </section>
+
+        <section class="button-subscribe">
             <button class="subscribe-btn"><strong>Підписатися</strong></button>
             <p>Тут розміщується основний контент сторінки.</p>
+        </section>
+
+        <section class="video">
+            <h2>Відео</h2>
+            <video width="80%" height="540" controls>
+                <source src="video.mp4" type="video/mp4" />
+                Ваш браузер не підтримує відтворення відео.
+            </video>
+        </section>
+        <section class="audio">
+            <h2>Аудіо</h2>
+            <audio controls>
+                <source src="sound33.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує відтворення аудіо.
+            </audio>
+        </section>
+        <section class="iframe">
+            <h2>Інформація</h2>
+            <iframe width="80%" height="540" src="https://www.youtube.com/?app=desktop&gl=UA&hl=uk" frameborder="0"
+                allowfullscreen></iframe>
+        </section>
+
+        <article>
+            <section class="maps">
+                <h2>Google Maps</h2>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1ygRg3ICZpRmShHSCs5w_IQB8p0J3dvc&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+            </section>
         </article>
+        <aside>
+            <h2>Освітні матеріали</h2>
+            <section class="videos">
+                <a href="https://www.youtube.com/watch?v=CoqJs7JHAI4&list=PLS3dH5drwWJYbWMM9zB-Q2xgnBsbkG6jS">
+                    <img src="https://img.youtube.com/vi/CoqJs7JHAI4/0.jpg" alt="video1">
+                    <span><strong>Що ми не знаємо про гравітацію [MinutePhysics]</strong></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=mXFkGO7tuBY&list=PLS3dH5drwWJYbWMM9zB-Q2xgnBsbkG6jS&index=2">
+                    <img src="https://img.youtube.com/vi/mXFkGO7tuBY/0.jpg" alt="video2">
+                    <span><strong>А що, як Земля припинить обертатися [Vsauce]</strong></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=ljSyeGjJkOs&list=PLS3dH5drwWJYbWMM9zB-Q2xgnBsbkG6jS&index=3">
+                    <img src="https://img.youtube.com/vi/ljSyeGjJkOs/0.jpg" alt="video3">
+                    <span><strong>Дивовижна фізика масок N95 і FFP2 [MinutePhysics]</strong></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=nqiDCz38xzI&list=PLS3dH5drwWJYbWMM9zB-Q2xgnBsbkG6jS&index=4">
+                    <img src="https://img.youtube.com/vi/nqiDCz38xzI/0.jpg" alt="video4">
+                    <span><strong>Історія Колмена Свіні – негідника, який став героєм</strong></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=2QZA3riQiFo&list=PLS3dH5drwWJYbWMM9zB-Q2xgnBsbkG6jS&index=5">
+                    <img src="https://img.youtube.com/vi/2QZA3riQiFo/0.jpg" alt="video5">
+                    <span><strong>Річард Фейнман. Магніти</strong></span>
+                </a>
+            </section>
+            <h3>Корисні посилання</h3>
+            <ul>
+                <li><a href="https://rrevura2023-ux.github.io/mt41_iplbrrr/">Головна</a></li>
+            </ul>
+        </aside>
     </main>
-
-    <aside>
-        <h2>Останні новини</h2>
-        <ul>
-          <video width="80%" height="540">
-            <source src="video.mp4" type="video/mp4"/>
-            Ваш браузер не підтримує відтворення відео.
-          </video>
-           <li><a href="https://rrevura2023-ux.github.io/mt41_iplbrrr/">Головна</a></li>
-        </ul>
-    </aside>
-
     <footer>
-
-        
-
-        <p>&copy; 2025 Всі права захищені</p>
+        <p>&copy; <strong>2026</strong> by IT college. All rights reserved.</p>
     </footer>
 </body>
 
