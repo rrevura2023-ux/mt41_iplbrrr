@@ -6,78 +6,119 @@
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
     <title>LABHUB</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
-    
-    <style> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
         body {
             background-color: #181818;
             background-image: url("https://images.unsplash.com/photo-1737365505612-7ff3ef8f7970?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
-            background-repeat: no-repeat;  
-            background-size: cover;       
-            background-position: center;  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             background-attachment: fixed;
-            
+
         }
 
         header {
             max-width: 500px;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: #e39b27;
             font-family: "Changa One", sans-serif;
 
         }
 
         footer {
-             color: #825431;
-             font-family: 'Pliant', sans-serif;
-             max-width: 800px;
-             margin: 30px 0;
+            color: #825431;
+            font-family: 'Pliant', sans-serif;
+            max-width: 800px;
+            margin: 30px 0;
         }
 
         .text-column {
 
             color: #f0bd6f;
-             font-family: 'Pliant', sans-serif;
-             flex: 1;
-             max-width: 700px;
-             text-align: justify;         /* Вирівнюємо текст по ширині для охайного вигляду */
+            font-family: 'Pliant', sans-serif;
+            flex: 1;
+            max-width: 700px;
+            text-align: justify;
+            /* Вирівнюємо текст по ширині для охайного вигляду */
 
             background-color: rgb(0, 0, 0);
             background-position: center;
             background-image: url("https://img.magnific.com/free-vector/vector-abstract-black-gold-luxury-background_361591-3873.jpg?semt=ais_hybrid&w=740&q=80");
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 20px; /* Відступи всередині блоку */
-            margin: 10px 0; /* Відступи зовні блоку */
-            border-radius: 10px; /* Закруглені кути */
-            }
-
-            aside {
-                max-width: 500px;
-            }
-        
-        ol, li, a {
-            color: #f3a663;
-             font-family: 'Pliant', sans-serif;
-             text-decoration: none;
-             
-             a:hover {
-                text-decoration: underline;
-            } 
+            padding: 20px;
+            /* Відступи всередині блоку */
+            margin: 10px 0;
+            /* Відступи зовні блоку */
+            border-radius: 10px;
+            /* Закруглені кути */
         }
 
+        aside {
+            max-width: 500px;
+        }
+
+        li,
+        a {
+            color: #f3a663;
+            font-family: 'Pliant', sans-serif;
+            text-decoration: none;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .animationframe {
+            animation: fadeInUpBounce 1s alternate;
+        }
+
+        @keyframes fadeInUpBounce {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(-10px);
+
+            }
+
+            80% {
+                transform: translateY(5px);
+
+            }
+
+            100% {
+                transform: translateY(0);
+
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    <header>
+    <header class="animationframe">
         <h1>Програмування в Internet</h1>
         <nav class="text-column">
             <ul>
@@ -93,25 +134,30 @@ initial-scale=1.0">
         </nav>
     </header>
     <main>
-        <article>
+        <article class="animationframe">
             <h2 id="labs">Лабораторні:</h2>
-            <p class="text-column"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maxime reiciendis obcaecati ipsum nemo
-            voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi velit
-            quisquam repudiandae!</strong></p>
-            <p class="text-column"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
+            <p class="text-column"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                    maxime
+                    reiciendis obcaecati ipsum nemo
+                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
+                    velit
+                    quisquam repudiandae!</strong></p>
+            <p class="text-column"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
+                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
         </article>
     </main>
 
-    <aside>
+    <aside class="animationframe">
         <h2>Інші курси:</h2>
-        <div class="text-column">
-        <ol>
-            <li><a href="./course/c1.html">Cистеми Програмування;</a></li>
-            <li><a href="./course/c2.html">База Даних;</a></li>
-            <li><a href="./course/c3.html">ООП;</a></li>
-            <li><a href="./course/c4.html">МОС;</a></li>
-            <li><a href="./course/c5.html">ОНС;</a></li>
-        </ol>
+        <div class="text-column animationLine">
+            <ol>
+                <li><a href="./course/c1.html">Cистеми Програмування;</a></li>
+                <li><a href="./course/c2.html">База Даних;</a></li>
+                <li><a href="./course/c3.html">ООП;</a></li>
+                <li><a href="./course/c4.html">МОС;</a></li>
+                <li><a href="./course/c5.html">ОНС;</a></li>
+            </ol>
         </div>
     </aside>
 
