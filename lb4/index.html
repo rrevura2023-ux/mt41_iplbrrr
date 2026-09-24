@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    .Forms {
+
+        flex: 1;
+        max-width: 100px;
+        column-count: 1;
+        text-align:justify;
+        gap: 15px;
+    }
+
+    .Forms, input {
+
+       margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <main>
+        <header>
+            <h1>Мій веб-сайт</h1>
+            <section class="Forms">
+                <form action="." method="post">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Пошта:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password">
+                    <label for="age">Вік:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                    <label><input type="radio" name="gender" value="male"> Чоловік</label>
+                    <label><input type="radio" name="gender" value="female"> Жінка</label>
+                    <label for="language">Мова:</label>
+                    <select id="language" name="language">
+                        <option value="uk">Українська</option>
+                        <option value="en">Англійська</option>
+                        <option value="de">Німецька</option>
+                    </select>
+                    <input type="language">
+                    <label for="file">Файл:</label>
+                    <input type="file" id="file" name="file">
+                    <label for="color">Колір:</label>
+                    <input type="color" id="color" name="color" value="#000000">
+                    <label for="time">Час</label>
+                    <input type="time" id="time" name="time">
+                </form>
+                <button class="height=200" type="submit">Відправити</button>
+            </section>
+    </main>
+
+    <aside>
+        <h4>Головна сторінка</h4>
+        <ul>
+            <li><a href="https://rrevura2023-ux.github.io/mt41_iplbrrr/">Цикни на мене!</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+
+
+
+        <p>&copy; 2025 Всі права захищені</p>
+    </footer>
+</body>
+
+</html>
