@@ -37,29 +37,29 @@
                         <input type="text" id="name" name="name" required>
                         <p></p>
                         <label for="email">Пошта:</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                         <p></p>
                         <label for="password">Пароль:</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                         <p></p>
                         <label for="age">Вік:</label>
-                        <input type="number" id="age" name="age" min="1" max="120">
+                        <input type="number" id="age" name="age" min="1" max="120" required>
                         <p></p>
                         <label for="birthdate">Дата народження:</label>
-                        <input type="date" id="birthdate" name="birthdate">
+                        <input type="date" id="birthdate" name="birthdate" required>
                         <p></p>
-                        <label><input type="radio" name="gender" value="male"> Чоловік</label>
-                        <label><input type="radio" name=">gender" value="female"> Жінка</label>
+                        <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+                        <label><input type="radio" name=">gender" value="female" required> Жінка</label>
                         <p></p>
                         <label for="language">Мова:</label>
-                        <select id="language" name="language">
+                        <select id="language" name="language" required>
                             <option value="uk">Українська</option>
                             <option value="en">Англійська</option>
                             <option value="de">Німецька</option>
                         </select>
                         <p></p>
                         <label for="country">Країна</label>
-                        <select for="country">
+                        <select for="country" required>
                             <option value="uk">Україна</option>
                             <option value="en">Англія</option>
                             <option value="de">Німеччина</option>
@@ -71,13 +71,14 @@
                     <fieldset>
                         <legend>Вибери свій предмет</legend>
                         <label for="country">Предмети на вибір</label>
-                        <select for="country">
+                        <select for="country" required>
                             <option value="mate">Математика</option>
                             <option value="uklangueg">Українська мова</option>
                             <option value="english">Англійська</option>
+                            </select>
                             <p></p>
                             <label for="range">Rate Interest in Computer Science</label>
-                            <input type="range">
+                            <input type="range" required>
                     </fieldset>
                     <h2>Your Skill</h2>
                     <fieldset>
@@ -86,13 +87,13 @@
                         <textarea></textarea>
                         <p></p>
                         <label for="file">Файл:</label>
-                        <input type="file" id="file" name="file">
+                        <input type="file" id="file" name="file" required>
                         <p></p>
                         <label for="color">Колір:</label>
-                        <input type="color" id="color" name="color" value="#000000">
+                        <input type="color" id="color" name="color" value="#000000" required>
                         <p></p>
                         <label for="time">Time</label>
-                        <input type="time" id="time" name="time">
+                        <input type="time" id="time" name="time" required>
                         <p></p>
                     </fieldset>
                      <button type="submit">Відправити</button>
