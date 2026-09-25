@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота 4</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <style>
-
     body {
-         color: aliceblue;
-          text-align: center;
-          background-image: url(https://media.istockphoto.com/id/1407063872/uk/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%96-%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F/%D1%81%D1%83%D1%87%D0%B0%D1%81%D0%BD%D0%B8%D0%B9-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B7-%D1%87%D0%BE%D1%80%D0%BD%D0%B8%D0%BC-%D0%B3%D1%80%D0%B0%D0%B4%D1%96%D1%94%D0%BD%D1%82%D0%BE%D0%BC-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D0%B8%D0%B9-%D1%87%D0%BE%D1%80%D0%BD%D0%B8%D0%B9-%D1%84%D0%BE%D0%BD-%D0%B1%D1%96%D0%B7%D0%BD%D0%B5%D1%81%D1%83.jpg?s=612x612&w=0&k=20&c=4qBAcN85jsMwo_zmo9B6LrhfaS8idGSkBXKnWpyj8X4=);
-         background-position: center;
-         background-size: cover;
-         background-attachment: fixed;
-        }        
+        color: rgb(82, 63, 134);
+        text-align: center;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs2I1TjuMAOswnJSbQp1OrQmH8ODbEkuLik5x9VihHz1aCnmmTWC_b0Y7f&s=10);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
-    ul, a {
+    ul,
+    a {
         text-decoration: none;
-         a:hover {
-          text-decoration: underline;
-         }
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
     .Forms {
@@ -31,27 +41,69 @@
         column-count: 1;
         gap: 15px;
         flex: 1;
-        background-color: rgb(50, 50, 50);
-        color: rgb(255, 255, 255);
+        background-image: url(https://img.magnific.com/premium-photo/abstract-blue-background-texture-graphic-design-web-design-banner_947073-8965.jpg?semt=ais_hybrid&w=740&q=80);
         text-align: center;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: "", sans-serif;
+        font-size: medium;
+    }
+
+    h2 {
+        color: #1d3086;
+        font-family: 'Oswald', sans-serif;
+        text-decoration: none;
+    }
+
+    label {
+        color: rgb(82, 72, 137);
+        font-family: 'Roboto Slab', sans-serif;
+    }
+
+    label:hover {
+        text-decoration: underline;
+        color: rgb(81, 52, 124);
+        transition: 2s;
+        text-decoration-color: rgb(207, 228, 251);
     }
 
     .Forms,
-    input {
+    select,
+    input,
+    textarea {
         margin-bottom: 10px;
+        background-color: rgb(37, 44, 121);
+        border-radius: 10px;
+        border-color: rgb(148, 148, 202);
     }
-    
+
+    legend {
+        color: rgb(48, 11, 128);
+    }
+
+    button {
+
+        background-color: black;
+        color: rgb(84, 84, 122);
+        border-radius: 10px;
+        border-color: blue;
+    }
+
+    section, fieldset {
+        border-color:rgb(39, 21, 97);
+        border-radius: 10px;
+    }
 </style>
 
 <body>
     <main>
         <header>
-            <h1 class="text-">STUDENT CARD</h1>
+            <h1 class="text-"><strong>STUDENT CARD</strong></h1>
             <section class="Forms">
                 <form action="." method="post">
-                    <h2>Personal Information</h2>
-                    <fieldset class="Forms">
-                        <legend>Provide your details</legend>
+                    <h2></strong>Personal Information</strong></h2>
+                    <fieldset>
+                        <legend><strong>Provide your details</strong></legend>
                         <p></p>
                         <label for="name">Ім'я:</label>
                         <input type="text" id="name" name="name" required>
@@ -87,22 +139,24 @@
                         <p></p>
                     </fieldset>
 
-                    <h2>College Subject</h2>
+                    <h2><strong>College Subject</strong></h2>
                     <fieldset>
-                        <legend>Вибери свій предмет</legend>
+                        <legend><strong>Вибери свій предмет</strong></legend>
                         <label for="country">Предмети на вибір</label>
                         <select for="country" required>
                             <option value="mate">Математика</option>
                             <option value="uklangueg">Українська мова</option>
                             <option value="english">Англійська</option>
-                            </select>
-                            <p></p>
-                            <label for="range">Rate Interest in Computer Science</label>
-                            <input type="range" required>
+                        </select>
+                        <p></p>
+                        <label for="range">Rate Interest in Computer Science</label>
+                        <input type="range" required>
                     </fieldset>
-                    <h2>Your Skill</h2>
+                </form>
+                <form action="." method="post">
+                    <h2><strong>Skill</strong></h2>
                     <fieldset>
-                        <legend>Assess your skills</legend>
+                        <legend><strong>Assess your skills</strong></legend>
                         <legend><label for="desc">Опишіт ваші скіли</label></legend>
                         <textarea></textarea>
                         <p></p>
@@ -116,7 +170,7 @@
                         <input type="time" id="time" name="time" required>
                         <p></p>
                     </fieldset>
-                     <button type="submit">Відправити</button>
+                    <button type="submit"><strong>Відправити</strong></button>
                 </form>
             </section>
     </main>
