@@ -10,43 +10,93 @@
 
 <style>
     .Forms {
-        margin-bottom: 20px;
+        max-width: 400px;
+        column-count: 1;
+        gap: 15px;
+        flex: 1;
+
+    }
+
+    .Forms,
+    input {
+        margin-bottom: 10px;
     }
 </style>
 
 <body>
     <main>
         <header>
-            <h1>Мій веб-сайт</h1>
+            <h1>STUDENT CARD</h1>
+            <h2>Personal Information</h2>
             <section class="Forms">
-                <form action="." method="post">
-                    <fieldset><legend><label for="name">Ім'я:</label></legend>
-                    <input type="text" id="name" name="name">
-                   <legend><label for="email">Пошта:</label></legend>
-                    <input type="email" id="email" name="email">
-                    <legend><label for="password">Пароль:</label></legend>
-                    <input type="password" id="password" name="password">
-                     <legend><label for="age">Вік:</label>
-                    <input type="number" id="age" name="age" min="1" max="120">
-                     <legend><label for="birthdate">Дата народження:</label>
-                    <input type="date" id="birthdate" name="birthdate">
-                    <label><input type="radio" name="gender" value="male"> Чоловік</label>
-                    <label><input type="radio" name=">gender" value="female"> Жінка</label>
-                     <legend><label for="language">Мова:</label>
-                    <select id="language" name="language">
-                        <option value="uk">Українська</option>
-                        <option value="en">Англійська</option>
-                        <option value="de">Німецька</option>
-                    </select>
-                     <legend><label for="file">Файл:</label></legend>
-                    <input type="file" id="file" name="file">
-                     <legend><label for="color">Колір:</label></legend>
-                    <input type="color" id="color" name="color" value="#000000">
-                     <legend><label for="time">Час</label></legend>
-                    <input type="time" id="time" name="time"></legend>
-                </fieldset>
+                <form action="https://rrevura2023-ux.github.io/mt41_iplbrrr/" method="post">
+                    <fieldset class="Forms">
+                        <legend>Provide your details</legend>
+                        <p></p>
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" name="name">
+                        <p></p>
+                        <label for="email">Пошта:</label>
+                        <input type="email" id="email" name="email">
+                        <p></p>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password">
+                        <p></p>
+                        <label for="age">Вік:</label>
+                        <input type="number" id="age" name="age" min="1" max="120">
+                        <p></p>
+                        <label for="birthdate">Дата народження:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                        <p></p>
+                        <label><input type="radio" name="gender" value="male"> Чоловік</label>
+                        <label><input type="radio" name=">gender" value="female"> Жінка</label>
+                        <p></p>
+                        <label for="language">Мова:</label>
+                        <select id="language" name="language">
+                            <option value="uk">Українська</option>
+                            <option value="en">Англійська</option>
+                            <option value="de">Німецька</option>
+                        </select>
+                        <p></p>
+                        <label for="country">Країна</label>
+                        <select for="country">
+                            <option value="uk">Україна</option>
+                            <option value="en">Англія</option>
+                            <option value="de">Німеччина</option>
+                        </select>
+                        <p></p>
+                    </fieldset>
+
+                <h2>College Subject</h2>
+                    <fieldset>
+                        <legend>Вибери свій предмет</legend>
+                        <label for="country">Предмети на вибір</label>
+                        <select for="country">
+                            <option value="mate">Математика</option>
+                            <option value="uklangueg">Українська мова</option>
+                            <option value="english">Англійська</option>
+                            <p></p>
+                            <label for="range">Rate Interest in Computer Science</label>
+                            <input type="range">
+                    </fieldset>
+                <h2>Your Skill</h2>
+                    <fieldset>
+                        <legend>Assess your skills</legend>
+                        <legend><label for="desc">Опишіт ваші скіли</label></legend>
+                        <textarea></textarea>
+                        <p></p>
+                        <label for="file">Файл:</label>
+                        <input type="file" id="file" name="file">
+                        <p></p>
+                        <label for="color">Колір:</label>
+                        <input type="color" id="color" name="color" value="#000000">
+                        <p></p>
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time">
+                        <p></p>
+                        <button type="submit">Відправити</button>
+                    </fieldset>
                 </form>
-                <button class="height=200" type="submit">Відправити</button>
             </section>
     </main>
 
@@ -61,7 +111,7 @@
 
 
 
-        <p>&copy; 2025 Всі права захищені</p>
+        <p>&copy; 2026 Всі права захищені</p>
     </footer>
 </body>
 
