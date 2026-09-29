@@ -23,8 +23,8 @@ initial-scale=1.0">
     padding: 0;
     list-style: none;
     font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #fafafa;
+    text-align: center;
+
 }
 
 /* Body and Layout */
@@ -34,7 +34,6 @@ body {
     line-height: 1.6;
     font-size: 18px;
     color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Header */
@@ -43,11 +42,12 @@ header {
     color: #000000;
     padding: 20px;
     text-align: center;
-    background-image: url(https://mapswire.com/images/maps/world-physical-maps/world-physical-map-graticules-mercator-v1.jpg)
+    background-image: url(https://mapswire.com/images/maps/world-physical-maps/world-physical-map-graticules-mercator-v1.jpg);
 }
 
 header h1 {
     margin: 0 0 10px;
+    background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -66,6 +66,7 @@ nav ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
+    color:#fff;
 }
 
 /* Section and Articles */
@@ -201,6 +202,12 @@ footer a {
 
             }
         }
+
+        .Cityselect{
+            border-color: #000000;
+            background-color: #3d3d49;
+            color: #fff;
+        }
     </style>
 
 </head>
@@ -212,10 +219,16 @@ footer a {
             <ul>
                 <li><a id="mainmenu" href="./index.html"><strong>Головна Cторінка</strong></a></li>
                     <ol>
-                        <li><a target="_blank" href="/test.html">Лабораторна робота №1;</a></li>
-                        <li><a href="./lb2/index.html">Лабораторна робота №2</a></li>
-                        <li><a target="_blank" href="./lb3/index.html">Лабораторна робота №3</a></li>
-                        <li><a target="_blank" href="./lb4/index.html">Лабораторна робота №4</a></li>
+                        <li><a target="_blank" href="/test.html">Міста</a> 
+                        <select class="Cityselect" onchange="location = this.value;">
+                        <option value=".">Оберіт місто</option>
+                        <option value="city/Notting.html"></option>
+                        <option value="city/Notting1.html">Trul</option>                         
+                        </select>
+                        </li>
+                        <li><a href="gallery/index.html">Галерея</a></li>
+                        <li><a target="_blank" href="contact/test.html">Контакти</a></li>
+                        <li><a target="_blank" href="subscribe/test.html">Підписка</a></li>
                     </ol>
                 </li>
             </ul>
@@ -223,7 +236,7 @@ footer a {
     </header>
     <main>
        <section class="Test">
-         <form> 
+         <form action="." method="post"> 
             <h1>Про блог</h1>
              <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
                     maxime
@@ -246,34 +259,19 @@ footer a {
                     necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
                     magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong>
                     <p></p>
-                    <button>Tsikni</button>
+                    <button  href="https://rrevura2023-ux.github.io/mt41_iplbrrr/">Tsikni</button>
          </form>
        </section>
        
         <article class="animationframe">
-            <h2 id="labs">Лабораторні:</h2>
-            <p class="text-column"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                    maxime
-                    reiciendis obcaecati ipsum nemo
-                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
-                    velit
-                    quisquam repudiandae!</strong></p>
-            <p class="text-column"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
-                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
         </article>
     </main>
 
     <aside class="animationframe">
         <h2>Інші курси:</h2>
-        <div class="text-column animationLine">
+        <div>
             <ol>
-                <li><a href="#mainmenu"><strong>Головне меню</strong></a>
-                <li><a href="./course/c1.html">Cистеми Програмування;</a></li>
-                <li><a href="./course/c2.html">База Даних;</a></li>
-                <li><a href="./course/c3.html">ООП;</a></li>
-                <li><a href="./course/c4.html">МОС;</a></li>
-                <li><a href="./course/c5.html">ОНС;</a></li>
+                <a href="#mainmenu"><strong>Головне меню</strong></a>
             </ol>
         </div>
     </aside>
