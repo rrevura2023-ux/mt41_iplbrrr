@@ -30,7 +30,6 @@ initial-scale=1.0">
             padding: 0;
             list-style: none;
             font-family: 'Arial', sans-serif;
-            animation: goingleft 1s alternate;
         }
 
         /* Body and Layout */
@@ -39,52 +38,52 @@ initial-scale=1.0">
             padding: 0;
             line-height: 1.6;
             font-size: 18px;
-            color: #333;
+            color: #0b0b0b;
+            animation: opacity 1.2s alternate;
         }
 
         /* Header */
         header {
-            background: #3d3d49;
+            background: #7d7d85;
             color: #000000;
             padding: 20px;
             text-align: center;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZm9C61IexsiMjndVe48zhGVaOTat0BX7hC8xRBb3cipZK_W4Y03RV5zs&s=10);
+            background-image: url(https://www.annees-de-pelerinage.com/wp-content/uploads/2019/09/cinque-terre-italy-travel.jpg);
             background-attachment: fixed;
-        }
+            background-position: center;
+            background-size: cover;
+        }    
+
             mark {
                 background: #eea231;
-                margin: 2px;
-                border-radius: 5px;
+                border-radius: 2px;
+                color: #000000;
             }
-        header h1 {
-            margin: 0 0 10px;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJzNUQfnWzOu_VCj733o5Nor5hZmixge-XgKmIz6-jA&s=10);
-            animation: opacitytitle 1.2s alternate;
-        }
-       @keyframes goingleft {
-          0% {
-                opacity: 0;
-                transform: translateX(50px);
-
+            
+            mark:hover {
+             background: #ffdda9;
+             animation: markopacity 1s alternate;
             }
 
-            60% {
-                opacity: 1;
-                transform: translateX(-10px);
-
-            }
-
-            80% {
-                transform: translateX(5px);
+            @keyframes markopacity {     
+            0% {
 
             }
 
             100% {
-                transform: translateX(0);
-
+                transition: 2s;
+                opacity: 1;
             }
-       }
-        @keyframes opacitytitle {
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJzNUQfnWzOu_VCj733o5Nor5hZmixge-XgKmIz6-jA&s=10);
+            animation: opacity 1.2s alternate;
+            border-radius: 5px;
+            
+        }
+        @keyframes opacity {
             0% {
                 opacity: 0;
             }
@@ -98,8 +97,10 @@ initial-scale=1.0">
         /* Navigation Bar */
         nav ul {
             background: #333;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtzbzcGuYV9iqsotcYcWz_6RU_e74uLY5XN5cUfEcJRmQunEH-n_KlVk&s=10);
             text-align: center;
             padding: 10px 0;
+            border-radius: 5px;
         }
 
         nav ul li {
@@ -117,9 +118,9 @@ initial-scale=1.0">
         /* Section and Articles */
         section {
             padding: 20px;
-            background-color: #545353;
+            background-image: url(https://img.wallscloud.net/uploads/thumb/2974359326/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0,_%D0%BB%D0%B8%D0%BD%D0%B8%D0%B8,_%D1%81%D0%B5%D1%80%D1%8B%D0%B9,_%D1%84%D0%BE%D0%BD-1024x576-MM-80.webp);
+            transition: 2s;
         }
-
         /* Gallery Section */
         #photo-gallery ul {
             display: flex;
@@ -152,6 +153,9 @@ initial-scale=1.0">
             padding: 20px;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           text-align: left;
+           animation: opacitytitle 1.5s alternate;
+           
         }
 
         form label {
@@ -169,13 +173,13 @@ initial-scale=1.0">
         }
 
         form button {
-            display: inline-block;
             background: #005A9C;
             color: #fff;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 10px;
+            align-items: center;
         }
 
         form button:hover {
@@ -220,35 +224,7 @@ initial-scale=1.0">
             color: #fff;
             text-decoration: underline;
             /* Consider removing underline if using buttons for CTA */
-        }
-
-        .animationframe {
-            animation: fadeInUpBounce 1s alternate;
-        }
-
-        @keyframes fadeInUpBounce {
-            0% {
-                opacity: 0;
-                transform: translateY(50px);
-
-            }
-
-            60% {
-                opacity: 1;
-                transform: translateY(-10px);
-
-            }
-
-            80% {
-                transform: translateY(5px);
-
-            }
-
-            100% {
-                transform: translateY(0);
-
-            }
-        }
+        }            
 
         .Cityselect {
             border-color: #000000;
@@ -273,7 +249,7 @@ initial-scale=1.0">
             background: #e69e39;
             transform: scaleX(0);
             transform-origin: right;
-            transition: transform 0.8s ease;
+            transition: transform 0.3s ease;
         }
 
         .link:hover::after {
@@ -290,31 +266,31 @@ initial-scale=1.0">
 </head>
 
 <body>
-    <header class="animationframe">
+    <header>
         <h1>Подорожі дружби: відкриваючи світ разом</h1>
         <nav>
             <ul>
-                <li><a id="mainmenu" href="./index.html" class="link"><strong>Головна Cторінка</strong></a></li>
+                <li><a id="mainmenu" href="./index.html" class="link">Головна Cторінка</a></li>
                 <ol>
-                    <li><a class="link" target="_blank" href="/test.html">Міста</a>
+                    <li><a class="link mark" target="_blank" href="/test.html"><mark>Міста</mark></a>
                         <select class="Cityselect" onchange="location = this.value;">
-                            <option value=".">Оберіт місто</option>
+                            <option value="."></option>
                             <option value="city/Notting.html">Одесса</option>
                             <option value="city/Notting1.html">Київ</option>
                         </select>
                     </li>
                     <li><a class="link" href="gallery/index.html"><mark>Галерея</mark></a></li>
-                    <li><a class="link" target="_blank" href="contact/test.html">Контакти</a></li>
-                    <li><a class="link" target="_blank" href="subscribe/test.html">Підписка</a></li>
+                    <li><a class="link" target="_blank" href="contact/test.html"><mark>Контакти</mark></a></li>
+                    <li><a class="link" target="_blank" href="subscribe/test.html"><mark>Підписка</mark></a></li>
                 </ol>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="Test">
+        <section>
             <form action="." method="post">
-                <h1>Про блог</h1>
+                <h1>Про блог :</h1>
                 <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
                         maxime
                         reiciendis obcaecati ipsum nemo
@@ -325,18 +301,6 @@ initial-scale=1.0">
                         necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem
                         quidem
                         magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
-            </form>
-            <form>
-                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                    maxime
-                    reiciendis obcaecati ipsum nemo
-                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
-                    velit
-                    quisquam repudiandae!</strong>
-                <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
-                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong>
-                <p></p>
                 <button href="https://rrevura2023-ux.github.io/mt41_iplbrrr/">Tsikni</button>
             </form>
         </section>
