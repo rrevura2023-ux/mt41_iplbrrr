@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>PR1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Body and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #3d3d49;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    background-image: url(https://mapswire.com/images/maps/world-physical-maps/world-physical-map-graticules-mercator-v1.jpg)
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Navigation Bar */
+nav ul {
+    background: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section and Articles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Gallery Section */
+#photo-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photo-gallery li {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#photo-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#photo-gallery figcaption {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Form Styles */
+form {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    display: inline-block;
+    background: #005A9C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background: #004080;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    /* Add additional styles for social media icons if using images or font icons */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline; /* Consider removing underline if using buttons for CTA */
+}
+        .animationframe {
+            animation: fadeInUpBounce 1s alternate;
+        }
+
+        @keyframes fadeInUpBounce {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+
+            }
+
+            60% {
+                opacity: 1;
+                transform: translateY(-10px);
+
+            }
+
+            80% {
+                transform: translateY(5px);
+
+            }
+
+            100% {
+                transform: translateY(0);
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="animationframe">
+        <h1>Подорожі дружби: відкриваючи світ разом</h1>
+        <nav class="text-column">
+            <ul>
+                <li><a id="mainmenu" href="./index.html"><strong>Головна Cторінка</strong></a></li>
+                    <ol>
+                        <li><a target="_blank" href="/test.html">Лабораторна робота №1;</a></li>
+                        <li><a href="./lb2/index.html">Лабораторна робота №2</a></li>
+                        <li><a target="_blank" href="./lb3/index.html">Лабораторна робота №3</a></li>
+                        <li><a target="_blank" href="./lb4/index.html">Лабораторна робота №4</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section class="Test">
+         <form> 
+            <h1>Про блог</h1>
+             <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                    maxime
+                    reiciendis obcaecati ipsum nemo
+                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
+                    velit
+                    quisquam repudiandae!</strong></p>
+            <p><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
+                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
+         </form>
+         <form> 
+             <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                    maxime
+                    reiciendis obcaecati ipsum nemo
+                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
+                    velit
+                    quisquam repudiandae!</strong>
+            <strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
+                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong>
+                    <p></p>
+                    <button>Tsikni</button>
+         </form>
+       </section>
+       
+        <article class="animationframe">
+            <h2 id="labs">Лабораторні:</h2>
+            <p class="text-column"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                    maxime
+                    reiciendis obcaecati ipsum nemo
+                    voluptatem vel provident repellendus nesciunt porro accusamus hic quis nisi numquam, eaque quasi
+                    velit
+                    quisquam repudiandae!</strong></p>
+            <p class="text-column"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+                    necessitatibus numquam harum eos corporis? Aut laborum, tempore explicabo facilis omnis autem quidem
+                    magnam cum, officiis quasi, consequuntur deserunt earum. Accusamus?</strong></p>
+        </article>
+    </main>
+
+    <aside class="animationframe">
+        <h2>Інші курси:</h2>
+        <div class="text-column animationLine">
+            <ol>
+                <li><a href="#mainmenu"><strong>Головне меню</strong></a>
+                <li><a href="./course/c1.html">Cистеми Програмування;</a></li>
+                <li><a href="./course/c2.html">База Даних;</a></li>
+                <li><a href="./course/c3.html">ООП;</a></li>
+                <li><a href="./course/c4.html">МОС;</a></li>
+                <li><a href="./course/c5.html">ОНС;</a></li>
+            </ol>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; <strong>2026</strong> by IT college. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
