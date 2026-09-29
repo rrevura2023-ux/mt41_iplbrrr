@@ -174,7 +174,7 @@ initial-scale=1.0">
         }
 
         form button {
-            background: #2d8fd5;
+            background: #d17a00;
             color: #fff;
             border: none;
             padding: 10px 20px;
@@ -184,7 +184,7 @@ initial-scale=1.0">
             
         }
         form h3 {
-            background-color: #7ba2ec;
+            background-color: #d17a00;
             margin-left: 10px;
             padding: 10px;
             max-width: 130px;
@@ -195,7 +195,7 @@ initial-scale=1.0">
             background:#eaeaec;
         }
         form button:hover {
-            background: #004080;
+            background: #ffa21f;
         }
 
         /* Footer */
@@ -270,11 +270,15 @@ initial-scale=1.0">
             background-color: #ff9900;
         }
 
-        aside {
+        aside a {
             text-align: center;
             background-image: url(https://i.7fon.org/1000/w685905968.jpg);
             color: azure;
+            text-decoration: none;
+            padding: 20px;
+            margin: 20px 5px;
         }
+    
 .asideanime {
         animation: asideanime 3s infinite;
 }
@@ -282,15 +286,18 @@ initial-scale=1.0">
 
             0% {
                 transform: translateX(10px);
+                transform: translateY(10px);
             }
 
             25% {
                 transform: translateX(15px);
+                transform: translateY(15px);
 
             }
         
             100% {
                transform: translateX(10px);
+               transform: translateY(10px);
 
             }
         }
@@ -299,11 +306,11 @@ initial-scale=1.0">
 </head>
 
 <body>
-    <header>
+    <header id="mainmenu">
         <h1>Подорожі дружби: відкриваючи світ разом</h1>
         <nav>
             <ul>
-                <li><a id="mainmenu" href="./index.html" class="link">Головна Cторінка</a></li>
+                <li><a href="./index.html" class="link">Головна Cторінка</a></li>
                 <ol>
                     <li><a class="link mark" target="_blank" href="/test.html"><mark>Міста</mark></a>
                         <select class="Cityselect" onchange="location = this.value;">
@@ -344,12 +351,9 @@ initial-scale=1.0">
     </main>
 
     <aside class="asideanime">
-        <h2>Інші курси:</h2>
-        <div>
             <ol>
-                <a href="#mainmenu"><strong>Головне меню</strong></a>
+                <a href="#mainmenu"><strong>☝</strong></a>
             </ol>
-        </div>
     </aside>
 
     <footer>
