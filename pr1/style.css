@@ -348,3 +348,7 @@
   .slider-arrow:focus-visible { outline: 3px solid #3b82f6; outline-offset: 2px; }
   .slider-arrow--prev { left: 0; }
   .slider-arrow--next { right: 0; }
+  .columnh {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
