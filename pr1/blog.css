@@ -1,4 +1,4 @@
- body,
+body,
  h1,
  h2,
  h3,
@@ -29,7 +29,7 @@
      color: #000000;
      padding: 20px;
      text-align: center;
-     background-image: url(https://www.annees-de-pelerinage.com/wp-content/uploads/2019/09/cinque-terre-italy-travel.jpg);
+     background-image: url(https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Berlin_2.jpg);
      background-attachment: fixed;
      background-position: center;
      background-size: cover;
@@ -165,11 +165,11 @@
 
  }
 
- form h3 {
+ form h2 {
      background-color: #d17a00;
      margin-left: 10px;
      padding: 10px;
-     max-width: 130px;
+     max-width: 300px;
      border-radius: 5px;
  }
 
@@ -258,11 +258,12 @@
 
  aside a {
      text-align: center;
-     background-image: url(https://i.7fon.org/1000/w685905968.jpg);
      color: azure;
      text-decoration: none;
      padding: 20px;
      margin: 20px 5px;
+border-radius: 10px;
+     background-color: #eea231;
  }
 
  .asideanime {
@@ -296,8 +297,9 @@
 
  button a {
      text-decoration: none;
-     color: #000000;
+     color: #ffffff;
      padding: 0 10px;
+     border: #d17a00;
  }
 
 .slider-arrow {
