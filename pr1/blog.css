@@ -11,7 +11,7 @@ body,
      padding: 0;
      list-style: none;
      font-family: 'Arial', sans-serif;
- }
+      }
 
  /* Body and Layout */
  body {
@@ -21,7 +21,7 @@ body,
      font-size: 18px;
      color: #0b0b0b;
      animation: opacity 1.2s alternate;
- }
+    }
 
  /* Header */
  header {
@@ -166,12 +166,41 @@ body,
  }
 
  form h2 {
-     background-color: #d17a00;
+     background-image: url(https://images.pexels.com/videos/29797582/abstract-abstractgradient-animation-backdrop-29797582.jpeg?cs=tinysrgb&dpr=1&w=500);
      margin-left: 10px;
      padding: 10px;
-     max-width: 300px;
+     max-width: 700px;
      border-radius: 5px;
+     color: #fcfcfc;
+     background-position: center;
  }
+
+ .titleMC {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCCQorqnTeG51h4Dvac7UchC5z-qFFalxuYMtx97t-N56yo0ijOT1Xcs2w&s=10);
+    color: #fcfcfc;
+    background-position: center;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+ }
+
+ .titleBR {
+   background-image: url(https://www.visitberlin.de/system/files/styles/visitberlin_bleed_header_mobile_portrait_visitberlin_mobile_1x/private/image/Brandenburger_Tor_Herbst_iStock_26486275_istock.com_sborisov_web.jpg.jpg?itok=xaw4kkxL);
+    color: #fcfcfc;
+    background-position: center;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+ }
+
+
+ .subtitle {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkVNhR6T8HFLwP9Jbohh8ePoRVgfLx9g1qll8t9o8teg&s=10) ;
+    max-width: 200px;
+    color: #000000;
+    background-position: center;
+}
 
  form p {
      background: #eaeaec;
@@ -260,8 +289,8 @@ body,
      text-align: center;
      color: azure;
      text-decoration: none;
-     padding: 20px;
-     margin: 20px 5px;
+     padding: 10px;
+     margin: 10px 5px;
 border-radius: 10px;
      background-color: #eea231;
  }
