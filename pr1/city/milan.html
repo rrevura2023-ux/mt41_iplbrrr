@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Семантична структура</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-image: url(https://assets.city-life.it/uploads/DJI_20260612085640_0001_D_c708f793c3.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: left;
+        }
+
+        header h1 {
+            color: rgb(7, 7, 7);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            opacity: 1;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            background-color: rgba(0, 255, 38, 0.5);
+        }
+
+        nav a:hover {
+            background-color: rgba(26, 238, 15, 0.5);
+            padding: 10px;
+            color: rgb(255, 254, 254);
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            margin: 5px;
+        }
+
+        header mark {
+            background-color: rgba(0, 255, 26, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        form {
+            max-width: 800px;
+        }
+
+        .marginform1 {
+            background: #f3eded;
+            border-radius: 10px;
+        }
+
+        .marginform2 {
+            margin: 5px;
+            background: #ececec;
+            border-radius: 10px;
+            border: 5px solid #ccc;
+        }
+
+        .marginform3 {
+            margin: 5px;
+            padding: 10px;
+            background: #ececec;
+            border-radius: 20px;
+            border: 2px solid #e5dada;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="mainmenu">
+        <h1><mark>Мілан</mark></h1>
+        <h3>Мармур, Стиль та Мистецтво Жити</h3>
+        <nav>
+            <ol>
+                <li><a href="#about"><strong>Про місто</strong></a></li>
+                <li><a href="#landmarks"><strong>Визначні пам’ятки</strong></a></li>
+                <li><a href="#culture"><strong>Культура та традиції</strong></a></li>
+                <li><a href="#cuisine"><strong>Кухня та гастрономія</strong></a></li>
+                <li><a href="#stories"><strong>Особисті історії</strong></a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <form id="about">
+            <h2>Про місто</h2>
+            <p class="marginform1" style="padding: 10px;"><strong>Гамбург</strong> — це вільне ганзейське місто на
+                півночі Німеччини. Хоча воно розташоване за 100 км від Північного
+                моря, саме річка Ельба зробила його одним із найбільших портів Європи. Вода тут усюди: в місті
+                налічується
+                понад 2500 мостів. Гамбург пахне кавою, морською сіллю, спеціями та свободою. Це місто з суворим
+                нордичним
+                характером, цегляною архітектурою, але неймовірно теплою та бунтарською душею.</p>
+            <a style="margin: 10px;" href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3"
+                target="_blank">Дізнатися
+                більше(Вікіпедія)</a>
+        </form>
+        <form id="landmarks">
+            <h2>Визначні пам’ятки</h2>
+            <ul>
+                <li class="marginform1">
+                    <p><strong>Duomo di Milano (Міланський собор):</strong> Грандіозний біломармуровий собор у стилі
+                        полум'яніючої готики, який будували майже 600 років. Його дах — це унікальний ліс зі 135
+                        кам'яних шпилів та тисяч скульптур, між якими можна прогулюватися.</p>
+                </li>
+                <img src="посилання_на_фото_duomo.jpg" alt="Duomo di Milano" width="500"
+                    style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+
+                <li class="marginform1">
+                    <p><strong>Galleria Vittorio Emanuele II (Галерея Віктора Еммануїла II):</strong> Один із
+                        найстаріших і найрозкішніших пасажів світу. Величний скляний купол, мозаїчна підлога та
+                        витончена архітектура дев'ятнадцятого століття роблять його головним центром стилю міста.</p>
+                </li>
+                <img src="посилання_на_фото_galleria.jpg" alt="Galleria Vittorio Emanuele II" width="500"
+                    style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+
+                <li class="marginform1">
+                    <p><strong>Castello Sforzesco (Замок Сфорца):</strong> Монументальна оборонна фортеця п'ятнадцятого
+                        століття з червоної цегли. Колишня резиденція міланських герцогів, до створення та розпису
+                        оборонних систем якої доклав руку сам Леонардо да Вінчі.</p>
+                </li>
+                <img src="посилання_на_фото_castello.jpg" alt="Castello Sforzesco" width="500"
+                    style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+
+                <li class="marginform1">
+                    <p><strong>I Navigli (Канали Навільї):</strong> Мальовничий історичний район уздовж старовинних
+                        водяних каналів. Сьогодні це головне серце вечірнього життя Мілана з сотнями затишних арт-кафе,
+                        майстерень художників та найкращих місць для традиційного аперитиво.</p>
+                </li>
+                <img src="посилання_на_фото_navigli.jpg" alt="Navigli" width="500"
+                    style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+
+            </ul>
+        </form>
+        <form id="cuisine">
+            <h2>Кухня та гастрономія</h2>
+            <p class="marginform1" style="padding: 0 10px;">
+                Міланська кухня відрізняється від класичної південної італійської: тут менше використовують томати,
+                натомість обожнюють вершкове масло, рис, шафран та ніжне м'ясо.
+            </p>
+            <ul>
+                <li class="marginform2">
+                    <p><strong>Risotto alla Milanese (Шафранове різото):</strong>
+                        <img src="посилання_на_фото_risotto.jpg" alt="Risotto alla Milanese" width="500"
+                            style="margin: 0px 1px; border-radius: 10px;">
+                    </p>
+                    <p>Легендарний золотий рис. Його готують на насиченому бульйоні з додаванням шафрану, який дарує
+                        страві яскраво-жовтий колір, та великої кількості пармезану.</p>
+                    <p><a style="background-color: #96f69b; color: #000000"
+                            href="https://f1foodies.wordpress.com/2015/05/21/barbajuan/"
+                            target="_blank"><strong>Переглянути
+                                рецепт</strong></a></p>
+                </li>
+                <li class="marginform2">
+                    <p><strong>Cotoletta alla Milanese (Міланська котлета):</strong></p>
+                    <img src="посилання_на_фото_cotoletta.jpg" alt="Cotoletta alla Milanese" width="500"
+                        style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Величезна відбивна з ніжної телятини на кістці, ретельно панірована в сухарях і обсмажена у
+                        вершковому маслі до ідеальної золотої скоринки.</p>
+                    <p><a style="background-color: #96f69b; color: #000000"
+                            href="https://f1foodies.wordpress.com/2015/05/21/barbajuan/"
+                            target="_blank"><strong>Переглянути
+                                рецепт</strong></a></p>
+
+                </li>
+                <li class="marginform2">
+                    <p><strong>Panettone (Панетоне):</strong></p>
+                    <img src="посилання_на_фото_panettone.jpg" alt="Panettone" width="500"
+                        style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Традиційний міланський пиріг із легкого повітряного тіста з додаванням цукатів, родзинок та
+                        цедри, який став символом місцевих різдвяних традицій.</p>
+                    <p><a style="background-color: #96f69b; color: #000000"
+                            href="https://f1foodies.wordpress.com/2015/05/21/barbajuan/"
+                            target="_blank"><strong>Переглянути
+                                рецепт</strong></a></p>
+                </li>
+            </ul>
+        </form>
+
+        <form id="culture">
+            <h2>Culture та традиції</h2>
+            <p class="marginform3">
+                Головна релігія Мілана після футболу — це Аперитиво. Щодня з 18:30 до 21:00 місто сповільнює свій
+                шалений діловий темп. Міланці виходять з офісів, знімають краватки та збираються у численних барах,
+                особливо біля каналів. Купуючи один вечірній напій, ви отримуєте безкоштовний доступ до великого
+                фуршетного столу з автентичними італійськими закусками, сирами, прошуто та фокаччею для душевних розмов.
+            </p>
+            <img src="посилання_на_фото_культури_мілана.jpg" alt="Традиції Мілана" width="500"
+                style="margin: 0px 20px; border-radius: 10px;">
+        </form>
+
+        <form id="stories">
+            <h2>Особисті історії від нашої трійки</h2>
+
+            <p class="marginform3"><strong>Гастро-шок Хакона:</strong></p>
+            <p style="padding: 0px 10px; border:rgb(191, 189, 189) solid 2px" class="marginform1">
+                <em>«У Мілані я категорично заборонив хлопцям йти в ресторани біля Дуомо. Ми поїхали на Навільї і
+                    знайшли крихітну Osteria, де працює літнє подружжя. Коли нам принесли шафранове різото, Олаф хотів
+                    його сфотографувати, але я забрав тарілку. Таку страву треба їсти гарячою, в першу ж секунду! Це
+                    було настільки ніжно, що ми просто мовчали хвилин п'ять».</em>
+            </p>
+
+            <p class="marginform3"><strong>Штурманський тріумф Романа:</strong></p>
+            <p style="padding: 0px 10px; border:rgb(191, 189, 189) solid 2px" class="marginform1">
+                <em>«Замість дорогого екскурсійного автобуса я дізнався про міланський трамвай №1. Це історичні жовті
+                    вагони 1920-х років. Ми сіли в нього, заплатили всього пару євро за квиток і проїхали через усе
+                    історичне місто. Дерев'яні сидіння, характерний стукіт коліс і вигляд з вікна на старовинні арки —
+                    це була найкраща екскурсія нашої мандрівки!»</em>
+            </p>
+
+            <img src="мілан_фото1.jpg" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Мілана">
+            <img src="мілан_фото2.jpg" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Мілана">
+            <img src="мілан_фото3.jpg" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Мілана">
+            <img src="мілан_фото4.jpg" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Мілана">
+        </form>
+    </main>
+
+    <aside style="text-align: center;">
+        <ul>
+            <li><a href="/pr1/index.html"
+                    style="text-decoration: none; color: #040404; background-color: #8eff99; padding: 5px; border-radius: 10px;"><strong>Головна
+                        Сторінка</strong></a></li>
+            <li><a href="#mainmenu"
+                    style="text-decoration: none; color: #040404; background-color: #91ffab; padding: 5px; border-radius: 10px;">☝</a>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+
+
+
+        <p>&copy; 2025 Всі права захищені</p>
+    </footer>
+</body>
+
+</html>

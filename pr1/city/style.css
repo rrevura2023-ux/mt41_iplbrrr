@@ -30,7 +30,6 @@ header h1 {
 /* Navigation Bar */
 nav ul {
     background: #333;
-    text-align: center;
     padding: 10px 0;
 }
 
@@ -39,10 +38,18 @@ nav ul li {
     margin: 0 10px;
 }
 
-nav ul li a {
+nav ul li {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a {
+background-color: #ffae00;
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 5px;
+border-radius: 5px;
 }
 
 /* Section and Articles */
@@ -112,6 +119,19 @@ form button:hover {
     background: #004080;
 }
 
+form a {
+    background: #000000;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form a:hover {
+        background: #454646;
+        transition: 0.3s;
+    }
+
 /* Footer */
 footer {
     background: #333;
@@ -149,4 +169,13 @@ footer p {
 footer a {
     color: #fff;
     text-decoration: underline; /* Consider removing underline if using buttons for CTA */
+}
+
+.city-opacity {
+    opacity: 0.5;
+}
+
+.city-opacity:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }

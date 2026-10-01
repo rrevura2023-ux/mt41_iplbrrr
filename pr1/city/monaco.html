@@ -6,43 +6,228 @@
     <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
     <title>Семантична структура</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-image: url(https://assets.micontenthub.com/traveloffers/travel-tips/a-stroll-along-the-waterfront-of-monaco-brings-you-to-many-delightful-corners_h8JO32-H0.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            text-align: left;
+        }
+
+        header h1 {
+            color: rgb(7, 7, 7);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            opacity: 1;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            background-color: rgba(0, 102, 255, 0.5);
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 26, 170, 0.5);
+            padding: 10px;
+            color: rgb(255, 254, 254);
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            margin: 5px;
+        }
+
+        header mark {
+            background-color: rgba(0, 123, 255, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        form {
+            max-width: 800px;
+        }
+
+        .marginform1 {
+            background: #f3eded;
+            border-radius: 10px;
+        }
+
+        .marginform2 {
+            margin: 5px;
+            background: #ececec;
+            border-radius: 10px;
+            border: 5px solid #ccc;
+        }
+
+        .marginform3 {
+            margin: 5px;
+            padding: 10px;
+            background: #ececec;
+            border-radius: 20px;
+            border: 2px solid #e5dada;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Мій веб-сайт</h1>
+    <header id="mainmenu">
+        <h1><mark>Монако</mark></h1>
+        <h3>Блиск Лазурових Скель</h3>
         <nav>
             <ol>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="#about"><strong>Про місто</strong></a></li>
+                <li><a href="#landmarks"><strong>Визначні пам’ятки</strong></a></li>
+                <li><a href="#culture"><strong>Культура та традиції</strong></a></li>
+                <li><a href="#cuisine"><strong>Кухня та гастрономія</strong></a></li>
+                <li><a href="#stories"><strong>Особисті історії</strong></a></li>
             </ol>
         </nav>
     </header>
 
     <main>
-        <article>
-            <h2>Основна стаття</h2>
-            <p>Тут розміщується основний контент сторінки.</p>
-        </article>
+        <form id="about">
+            <h2>Про місто</h2>
+            <p class="marginform1" style="padding: 10px;"><strong>Монако</strong> — це дивовижний феномен. Друга
+                найменша країна у світі (після Ватикану) затиснута між крутими схилами Альп та водами Середземного моря.
+                Тут немає класичного поділу на міста, є райони. Монако вражає своєю чистотою: бруківку буквально миють
+                із шампунем, а вулиці вертикально переплетені між собою. Це місто мільйонерів, суперкарів та абсолютної
+                безпеки, де старовина межує з футуристичними хмарочосами, що ростуть прямо зі скель.</p>
+            <a style="margin: 10px;" href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D0%B0%D0%BA%D0%BE"
+                target="_blank">Дізнатися
+                більше(Вікіпедія)</a>
+        </form>
+        <form id="landmarks">
+            <h2>Визначні пам’ятки</h2>
+            <ul>
+                <li class="marginform1">
+                    <p><strong>Casino de Monte-Carlo:</strong> Легендарне казино, побудоване в стилі боз-ар. Велична
+                        будівля з розкішними залами, куди вдень можна зайти як у музей, а ввечері — випробувати фортуну
+                        (якщо ви пройшли дрес-код).</p>
+                </li>
+                <img src="https://asset.montecarlosbm.com/styles/list_item_short_style_desktop_webp/s3/media/image/casino-de-monte-carlo-place-du-casino-2024-127%20%281%29.jpg.webp?h=049aeee8&itok=uoio0Ko5"
+                    alt="Casino de Monte-Carlo" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Monaco-Ville (Старе місто):</strong> Історичний центр на вершині 60-метрової скелі
+                        Ле-Роше. Тут розташований
+                        Княжий палац Гримальді, де щодня об 11:55 можна побачити урочисту зміну варти.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYxQSBrWdpt-FcNrS9bzclfLqjh2Ua9HW-xVGqckOLMQ&s=10"
+                    alt="Monaco-Ville" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Океанографічний музей:</strong> рандіозна споруда, що буквально звисає зі скелі над
+                        морем. Його довгий час
+                        очолював сам Жак-Ів Кусто. Всередині — гігантські акваріуми та скелети китів.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyTko_i0TMfNW7fEFRKTsloWr8dTF58KEvgaPnHICygA&s=10"
+                    alt="Okeanmyself" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Порт Еркюль (Port Hercule):</strong> Природна бухта, заповнена найдорожчими яхтами світу.
+                        Саме вздовж цього
+                        порту проходить знаменита траса міських перегонів Формули-1</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6aZnBS27DqmLN-C05lfNRQrjGsxt7eEkupkvQwfEUqYXb4Kqsde6_muI1&s=10"
+                    alt="Port Hercule" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+            </ul>
+        </form>
+        <form id="cuisine">
+            <h2>Кухня та гастрономія</h2>
+            <p class="marginform1" style="padding: 0 10px;">
+                Кухня Монако — це вишуканий мікс французької високої кулінарії та здорових середземноморських традицій
+                сусідньої Італії.
+            </p>
+            <ul>
+                <li class="marginform2">
+                    <p><strong>Barbagiuan (Барбаджуан):</strong></p>
+                        <img src="https://f1foodies.wordpress.com/wp-content/uploads/2015/05/dsc_0644.jpg"
+                            alt="Barbagiuan" width="500" style="margin: 0px 1px; border-radius: 10px;">
+                    
+                    <p>Головна національна гордість князівства. Це хрусткі смажені пиріжки, начинені сумішшю мангольду
+                        (листового буряка), рікоти, шпинату та цибулі.</p>
+                        <p><a style="background-color: #96ccf6; color: #000000" href="https://f1foodies.wordpress.com/2015/05/21/barbajuan/" target="_blank"><strong>Переглянути
+                            рецепт</strong></a></p>
+                </li>
+                <li class="marginform2">
+                    <p><strong>Stocafi (Стокафі):</strong></p>
+                    <img src="https://racetaste.wordpress.com/wp-content/uploads/2018/05/stocafismall.jpg?w=1400" alt="Stocafi" width="500"
+                        style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Традиційна страва з сушеної тріска, яку довго тушкують у насиченому томатному соусі з додаванням
+                        чорних маслин, каперсів та часнику.</p>
+                        <p><a style="background-color: #96ccf6; color: #000000" href="https://racetaste.wordpress.com/2018/05/26/monaco-stocafi/" target="_blank"><strong>Переглянути
+                            рецепт</strong></a></p>
+                </li>
+                <li class="marginform2">
+                    <p><strong>Crêpes Suzette (Млинці Сюзетт):</strong></p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwHXb0ZvYzuktYfxjrtiFSQLFR4EVbAa5f44wdNwo9mw&s=10" alt="Crêpes Suzette" width="500"
+                        style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Легендарний французький десерт: тонкі млинці, які фламбують у соусі з карамелізованого цукру,
+                        вершкового масла, апельсинового соку та лікеру Grand Marnier.</p>
+                        <p><a style="background-color: #96ccf6; color: #000000" href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BB%D0%B8%D0%BD%D1%86%D1%96_%D0%A1%D1%8E%D0%B7%D0%B5%D1%82%D1%82" target="_blank"><strong>Переглянути 
+                            рецепт</strong></a></p>
+                </li>
+            </ul>
+        </form>
+
+        <form id="culture">
+            <h2>Культура та традиції</h2>
+            <p class="marginform3">
+                Життя монегасків обертається навколо поваги до княжої родини та великих спортивних подій. Головна
+                традиція міста — це витончена розкіш, яка тут є природною частиною повсякдення. Однією з найважливіших
+                релігійних традицій є День святої Девот (27 січня), покровительки країни, коли на площі перед Княжим
+                палацом урочисто спалюють символічний макет рибальського човна під оплески тисяч містян.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Inr7-mK2c3oxRvsdLkSQybpQ6MCTVFfqwVe_WixmtJ7_co9vV4ZYUQE&s=10" alt="Традиції Монако" width="500"
+                style="margin: 0px 20px; border-radius: 10px;">
+        </form>
+
+        <form id="stories">
+            <h2>Особисті історії від нашої трійки</h2>
+
+            <p class="marginform3"><strong>Штурманський біль Романа:</strong></p>
+            <p style="padding: 0px 10px; border:rgb(191, 189, 189) solid 2px" class="marginform1">
+                <em>«Монако ледь не зламало мій GPS. Карта показує, що потрібна мені вулиця поруч, буквально за два
+                    метри. Але виявляється, що вона знаходиться на 30 метрів вище над моєю головою, прямо на даху іншої
+                    будівлі! Ми пів години шукали прихований у скелі ліфт, щоб просто вийти до кав'ярні».</em>
+            </p>
+
+            <p class="marginform3"><strong>Емоція Хакона:</strong></p>
+            <p style="padding: 0px 10px; border:rgb(191, 189, 189) solid 2px" class="marginform1">
+                <em>«Коли ми сиділи в Monaco-Ville, я купив барбаджуан у місцевій пекарні, якій уже понад сто років. Ми
+                    їли їх прямо на кам'яному парапеті, дивлячись на безкрайнє бірюзове море та білосніжні яхти. Тоді я
+                    зрозумів: Монако — це не лише про казино та суперкари, це про тепле сонце та смак історії».</em>
+            </p>
+
+            <img src="https://www.rivieraloisirs.com//public//uploads/2020/04/Ville-de-Monaco-iStock-177779735.jpg" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Монако">
+            <img src="https://dynamic-media.tacdn.com/media/photo-o/34/26/1f/5e/caption.jpg?w=2400&h=-1&s=1" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Монако">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxIIumQZpiiF9v6ngfaAlE6Y3BKY1htjbN-jk3o7MzwxounZgLmublWOFk&s=10" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Монако">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4S6Mnk9pw4E4t_hmlIsFlNZN8m0Tk5PQypdFiakmM1Sv-qNS3nOYZ6qWl&s=10" width="300" style="margin: 0px 20px; border-radius: 10px;"
+                alt="Подорож до Монако">
+        </form>
     </main>
 
-    <aside>
-        <h2>Останні новини</h2>
+    <aside style="text-align: center;">
         <ul>
-            <li><a href="#">Новина 1</a></li>
-            <li><a href="#">Новина 2</a></li>
+            <li><a href="/pr1/index.html"
+                    style="text-decoration: none; color: #040404; background-color: #8eb2ff; padding: 5px; border-radius: 10px;"><strong>Головна
+                        Сторінка</strong></a></li>
+            <li><a href="#mainmenu"
+                    style="text-decoration: none; color: #040404; background-color: #91ceff; padding: 5px; border-radius: 10px;">☝</a>
+            </li>
         </ul>
-        <form action="." method="post">
-         <label for="text">Text</label>
-         <input type="text" id="text" name="text" required>
-         <button>UUUUUUU</button>
-        </form> 
     </aside>
     <footer>
 
-        
+
 
         <p>&copy; 2025 Всі права захищені</p>
     </footer>

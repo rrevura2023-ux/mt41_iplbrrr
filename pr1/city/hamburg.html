@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Семантична структура</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header {
+            background-image: url(https://zakavto.com.ua/images/data/271551199_291584796329160_6976373390262285919_n.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            text-align: left;
+        }
+
+        header h1 {
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            opacity: 1;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 187, 0, 0.5);
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            margin: 5px;
+        }
+
+        header mark {
+            background-color: rgba(255, 187, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+            opacity: 1;
+        }
+
+        form {
+            max-width: 800px;
+        }
+
+        .marginform1 {
+            background: #f3eded;
+            border-radius: 10px;
+        }
+
+        .marginform2 {
+            margin: 5px;
+            background: #ececec;
+            border-radius: 10px;
+            border: 5px solid #ccc;
+        }
+
+        .marginform3 {
+            margin: 5px;
+            padding: 10px;
+            background: #ececec;
+            border-radius: 20px;
+            border: 2px solid #e5dada;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="mainmenu">
+        <h1><mark>Гамбург</mark></h1>
+        <h3>Вільне Морське Серце</h3>
+        <nav>
+            <ol>
+                <li><a href="#about"><strong>Про місто</strong></a></li>
+                <li><a href="#landmarks"><strong>Визначні пам’ятки</strong></a></li>
+                <li><a href="#culture"><strong>Культура та традиції</strong></a></li>
+                <li><a href="#cuisine"><strong>Кухня та гастрономія</strong></a></li>
+                <li><a href="#stories"><strong>Особисті історії</strong></a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <form id="about">
+            <h2>Про місто</h2>
+            <p class="marginform1" style="padding: 10px;"><strong>Гамбург</strong> — це вільне ганзейське місто на
+                півночі Німеччини. Хоча воно розташоване за 100 км від Північного
+                моря, саме річка Ельба зробила його одним із найбільших портів Європи. Вода тут усюди: в місті
+                налічується
+                понад 2500 мостів. Гамбург пахне кавою, морською сіллю, спеціями та свободою. Це місто з суворим
+                нордичним
+                характером, цегляною архітектурою, але неймовірно теплою та бунтарською душею.</p>
+            <a style="margin: 10px;" href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BC%D0%B1%D1%83%D1%80%D0%B3"
+                target="_blank">Дізнатися
+                більше(Вікіпедія)</a>
+        </form>
+        <form id="landmarks">
+            <h2>Визначні пам’ятки</h2>
+            <ul>
+                <li class="marginform1">
+                    <p><strong>Speicherstadt (Шпайхерштадт):</strong> Найбільший у світі історичний комплекс портових
+                        складів з червоної цегли. Канали, що проходять між цими будівлями, створюють унікальну
+                        фотоатмосферу, особливо під час припливів.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMjrjpLnPAeWzJP5cNuq79C-xaWI78Fmd86K98zSYHbA&s=10"
+                    alt="Speicherstadt" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Ельбська філармонія (Elbphilharmonie):</strong> Новий символ міста. Футуристична скляна
+                        надбудова над старим цегляним складом Kaispeicher А. Її дах нагадує розбурхані хвилі.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMs_PjdFqwLikKHv2kqOSKy_zrApxl8St1kHCY4-dlg&s=10"
+                    alt="Elbphilharmonie" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Район Санкт-Паулі та Репербан:</strong> Центр нічного життя, мистецтва та субкультур.
+                        Саме в клубах Гамбурга на початку 1960-х років розпочинали свою всесвітню кар'єру легендарні The
+                        Beatles.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgJVSIY1pq5FJO1uWZwMrB2Byn2ESqkcsL1D-5cJFtoHdg2Y_oqLxJjuM&s=10"
+                    alt="St. Pauli" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+                <li class="marginform1">
+                    <p><strong>Alter Elbtunnel (Старий тунель під Ельбою):</strong> Інженерний шедевр 1911 року.
+                        Підземний тунель завдовжки 426 метрів, куди машини та пішоходів опускають на спеціальних
+                        гігантських ліфтах.</p>
+                </li>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYNtk0jXr6d2aUBB8tZyXYc67TxPspM-KGDHJcPZbRw&s=10"
+                    alt="Alter Elbtunnel" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                <p></p>
+            </ul>
+        </form>
+        <form id="cuisine">
+            <h2>Кухня та гастрономія</h2>
+            <p class="marginform1" style="padding: 0 10px;">Кухня Гамбурга ситна, портова, з великою кількістю риби та
+                незвичними поєднаннями солодкого і солоного.
+            </p>
+            <ul>
+                <li class="marginform2">
+                    <p><strong>Fischbrötchen (Фішбрьотхен):</strong>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiErwzo0nbIAoqreAi6kK9Ys04BFGigW3jbmPH4cLlLQ&s=10"
+                            alt="Fischbrötchen" width="500" style="margin: 0px 1px; border-radius: 10px;">
+                    </p>
+                    </p>
+                    <p>Культовий портовий фастфуд. Кругла булка, всередину якої кладуть свіжий або маринований оселедець
+                        (Matjes), цибулю, солоний огірок та соус.</p>
+                    <p><a style="background-color: #dda200; color: #000000" href="https://cookandsoul.de/fisch-meer/fischbroetchen/" target="_blank"><strong>Переглянути
+                            рецепт</strong></a></p>
+                <li class="marginform2">
+                    <p><strong>Labskaus (Лабскаус):</strong></p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7DlSpzaXkgc26kki6lp-N_ibIT2Zruq-GuKVt1YBmMg&s=10"
+                        alt="Labskaus" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Старовинна страва моряків. Це пюре з солонини (яловичини), картоплі та буряка (що дає страві
+                        рожевий колір). Подається з яєчнею, маринованим оселедцем та огірком.</p>
+                    <p><a style="background-color: #dda200; color: #000000" href="https://mygerman.recipes/labskaus-hamburg-style/" target="_blank"><strong>Переглянути
+                            рецепт</strong></a></p>
+                </li>
+                <li class="marginform2">
+                    <p><strong>Franzbrötchen (Францбрьотхен):</strong> </p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOnQevsI0Q_Y4Lfn6sDW0dzTwKToR6vuBtmdzsNKMYxQ&s=10"
+                        alt="Franzbrötchen" width="500" style="margin: 0px 20px; border-radius: 10px;">
+                    <p>Неймовірна листкова булочка з корицею та цукром, що формою нагадує розплющений круасан. Найкраща
+                        пара до ранкової кави.</p>
+                    <p><a style="background-color: #dda200; color: #000000" href="https://anjagiersberg.de/2020/11/15/franzbroetchen-ohne-zucker/" target="_blank"><strong>Переглянути
+                            рецепт</strong></a></p>
+                </li>
+            </ul>
+        </form>
+        <form id="culture">
+            <h2>Culture та традиції</h2>
+            <p class="marginform3">Гамбуржці пишаються своїм статусом «вільних містян». Тут не люблять зайвого пафосу,
+                натомість цінують
+                прямоту та пунктуальність. Головна щотижнева традиція міста — недільний Ранковий рибний ринок
+                (Fischmarkt), який працює з 5 до 9:30 ранку. Туди приходять як місцеві за свіжим виловом, так і молодь
+                після нічних вечірок на Репербані — послухати живий рок у приміщенні старого аукціону та з'їсти рибний
+                бутерброд на світанку.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6vO17lT8784E-ExWgH5jyNM2e0XQn0IuGtJP0qhO5A&s=10"
+                alt="Fischmarkt" width="500" style="margin: 0px 20px; border-radius: 10px;">
+        </form>
+        <form id="stories">
+            <h2>Особисті історії від нашої трійки</h2>
+            <p class="marginform3"><strong>Фотополювання Олафа:</strong></p>
+            <p style="padding: 0px 10px; border:rgb(191, 189, 189) solid 2px" class="marginform1"><em>«У Шпайхерштадті я
+                    майже дві години простояв на мосту
+                    Похманнсбрюке. Було холодно,
+                    дув північний вітер, але я чекав на „синю годину“ — момент відразу після заходу сонця, коли
+                    вмикається
+                    підсвітка цегляних складів, а небо стає глибоко-синім. Коли я зробив цей кадр, де ліхтарі горять, а
+                    вода
+                    здається дзеркалом, пальців на руках я вже не відчував. Але воно того вартувало!».</em></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-suHVayJVzRjCl6VJeD89aSOypx5YBhuc_y-Iqx0CXQ&s=10"
+                width="300" style="margin: 0px 20px; border-radius: 10px;" alt="Фотополювання Олафа">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Freie_und_Hansestadt_Hamburg_%287256228590%29.jpg/1280px-Freie_und_Hansestadt_Hamburg_%287256228590%29.jpg?utm_source=uk.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+                width="300" style="margin: 0px 20px; border-radius: 10px;" alt="Фотополювання Олафа">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW8_awmQtPBpQHcRfIHEeMaKzxmrCQDb0jznAuIPgjdKq96kfpvCVfKYX0&s=10"
+                width="300" style="margin: 0px 20px; border-radius: 10px;" alt="Фотополювання Олафа">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAEqOBliV6smV5HwxRf1pe2np4QTXpX0U8D_yRToX11i3RHSipUZOapzGN&s=10"
+                width="300" style="margin: 0px 20px; border-radius: 10px;" alt="Фотополювання Олафа">
+        </form>
+    </main>
+
+    <aside style="text-align: center;">
+        <ul>
+            <li><a href="/pr1/index.html"
+                    style="text-decoration: none; color: #040404; background-color: #dda200; padding: 5px; border-radius: 10px;"><strong>Головна
+                        Сторінка</strong></a></li>
+            <li><a href="#mainmenu"
+                    style="text-decoration: none; color: #040404; background-color: #dda200; padding: 5px; border-radius: 10px;">☝</a>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+
+
+
+        <p>&copy; 2025 Всі права захищені</p>
+    </footer>
+</body>
+
+</html>
