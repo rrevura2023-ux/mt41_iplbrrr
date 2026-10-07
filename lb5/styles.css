@@ -12,3 +12,8 @@
   width: auto;    
   display: block;
 }
+
+.logos a:focus, .logos a:active {
+  outline: 2px solid #000;  
+  outline-offset: 4px;   
+}
