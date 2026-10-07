@@ -6,11 +6,13 @@
     justify-content: center;
     gap: 200px;
  padding: 0.75rem 0;
+border-bottom: 2px solid #f2e7e7;
 }
 .logos img {
   height: 140px;   
   width: auto;    
   display: block;
+  box-shadow: border-box;
 }
 
 .logos a:focus, .logos a:active {
