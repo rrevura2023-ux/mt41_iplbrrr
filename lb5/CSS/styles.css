@@ -1,0 +1,179 @@
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 0.75rem 0;
+    border-bottom: 2px solid #f2e7e7;
+}
+
+.logos img {
+    height: 140px;
+    width: auto;
+    display: block;
+    box-shadow: border-box;
+}
+
+.logos a:focus,
+.logos a:active {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+
+/* Шрифт (вузький гротеск, схожий на Roboto Condensed) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* ===== Секція + змінні ===== */
+#events_container {
+  --card-width: 180px;   /* ширина колонки: змінюйте тут */
+  --card-gap: 30px;      /* відстань між колонками */
+
+  background: #252876;
+  padding: 50px 0 75px;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+#events_container .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ===== Заголовок ===== */
+#events_container .view-header h2 {
+  text-align: center;
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+#events_container .view-header h2 span {
+  display: inline-block;
+  padding: 0 1px;
+  background: #0a2fa8;
+  color: #16bff2;
+  border-bottom: 2px solid #fff;
+  transition: border-color 5s ease;
+     /* плавна зміна кольору */
+}
+
+/* Ховер: біла лінія стає яскраво-синьою */
+#events_container .view-header h2 span:hover {
+  border-bottom-color: #00a2ff; 
+  color: #00a2ff;
+}
+
+#events_container .view-header h2 span a:hover {
+  transition: 5s ease;
+  color: #00a2ff;
+}
+
+/* Щоб текст не підкреслювався при ховері, бо вже є лінія */
+#events_container .view-header h2 a:hover {
+  text-decoration: none;
+}
+
+#events_container .view-header h2 a {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+/* ===== Сітка карток ===== */
+#events_container .views-view-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;   /* картки різної висоти; stretch = однакова висота */
+  justify-content: center;
+  gap: var(--card-gap);
+  margin: 0;
+}
+
+#events_container .views-col {
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
+  max-width: var(--card-width);
+  padding: 0;
+  float: none;
+}
+
+/* ===== Картка ===== */
+#events_container .views-field-title,
+#events_container .views-field-title .field-content {
+  display: block;
+}
+
+#events_container .views-field-title a {
+  display: block;
+  background: #f6f6f6;
+  text-decoration: none;
+  color: #00688f;
+}
+
+#events_container .views-field-title img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== Дата ===== */
+#events_container .event_date {
+  background: #fff;
+  color: #006a9a;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 12px 10px 11px;
+  border-bottom: 1px dotted #222;
+}
+
+#events_container .event_date time {
+  color: inherit;
+}
+
+/* ===== Назва події ===== */
+#events_container .views-field-title h3 {
+  margin: 0;
+  padding: 14px 15px 18px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.12;
+  color: #00688f;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* ===== Ховер ===== */
+#events_container .views-field-title a:hover h3 {
+      color: #00A1E4;
+    transition: color 2s ease-out, border-bottom 2s ease-out;
+    border-bottom: 2px solid #00A1E4;
+}
+
+/* ===== Адаптивність ===== */
+@media (max-width: 1200px) {
+  #events_container .views-col {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #events_container .views-col {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+  #events_container .view-header h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  #events_container .views-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
