@@ -20,13 +20,12 @@
 }
 
 
-/* Шрифт (вузький гротеск, схожий на Roboto Condensed) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
-/* ===== Секція + змінні ===== */
+
 #events_container {
-  --card-width: 180px;   /* ширина колонки: змінюйте тут */
-  --card-gap: 30px;      /* відстань між колонками */
+  --card-width: 180px;  
+  --card-gap: 30px;      
 
   background: #252876;
   padding: 50px 0 75px;
@@ -39,7 +38,7 @@
   padding: 0 15px;
 }
 
-/* ===== Заголовок ===== */
+
 #events_container .view-header h2 {
   text-align: center;
   margin: 0 0 32px;
@@ -55,10 +54,10 @@
   color: #16bff2;
   border-bottom: 2px solid #fff;
   transition: border-color 5s ease;
-     /* плавна зміна кольору */
+   
 }
 
-/* Ховер: біла лінія стає яскраво-синьою */
+
 #events_container .view-header h2 span:hover {
   border-bottom-color: #00a2ff; 
   color: #00a2ff;
@@ -69,7 +68,7 @@
   color: #00a2ff;
 }
 
-/* Щоб текст не підкреслювався при ховері, бо вже є лінія */
+
 #events_container .view-header h2 a:hover {
   text-decoration: none;
 }
@@ -80,11 +79,11 @@
 
 }
 
-/* ===== Сітка карток ===== */
+
 #events_container .views-view-grid .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;   /* картки різної висоти; stretch = однакова висота */
+  align-items: flex-start;  
   justify-content: center;
   gap: var(--card-gap);
   margin: 0;
@@ -98,7 +97,7 @@
   float: none;
 }
 
-/* ===== Картка ===== */
+
 #events_container .views-field-title,
 #events_container .views-field-title .field-content {
   display: block;
@@ -117,7 +116,7 @@
   height: auto;
 }
 
-/* ===== Дата ===== */
+
 #events_container .event_date {
   background: #fff;
   color: #006a9a;
@@ -133,7 +132,6 @@
   color: inherit;
 }
 
-/* ===== Назва події ===== */
 #events_container .views-field-title h3 {
   margin: 0;
   padding: 14px 15px 18px;
@@ -145,14 +143,12 @@
   word-wrap: break-word;
 }
 
-/* ===== Ховер ===== */
 #events_container .views-field-title a:hover h3 {
       color: #00A1E4;
     transition: color 2s ease-out, border-bottom 2s ease-out;
     border-bottom: 2px solid #00A1E4;
 }
 
-/* ===== Адаптивність ===== */
 @media (max-width: 1200px) {
   #events_container .views-col {
     flex: 0 0 calc(33.333% - 20px);
