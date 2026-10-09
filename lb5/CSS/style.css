@@ -23,6 +23,7 @@ header {
 
 section {
     display: block;
+    justify-content: center;
 }
 
 * {
@@ -80,3 +81,8 @@ section {
     clear: both;
 }
 
+.field--name-field-news-more-details .field--label {
+    background: #f6f6f6;
+    margin-right: 0.5rem;
+    padding: 0 5px;
+}
