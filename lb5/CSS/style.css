@@ -4,17 +4,13 @@
     box-sizing: border-box;
 }
 
-#logos_container {
-    padding: 1rem 0;
-}
-
 header {
     display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .container {
-        width: 750px;
+                width: 1170px;
     }
 }
 
@@ -57,11 +53,12 @@ section {
     position: absolute;
 }
 
-#logos_container img {
-    padding: 0, 15px;
-    width: 200px;
-    margin-right: 40px;
-    margin-left: 40px;
+@media only screen and (min-width: 992px) {
+    #logos_container img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 175px;
+    }
 }
 
 .img-responsive {
@@ -73,3 +70,13 @@ section {
 #logos_container a {
     text-align: center;
 }
+
+.container:before {
+    display: table;
+    content: " ";
+}
+
+.container:after {
+    clear: both;
+}
+
