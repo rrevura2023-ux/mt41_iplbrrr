@@ -49,6 +49,7 @@ h2 {
 .multicolumn-text {
     column-width: 300px;
     column-gap: 20px;
+    column-count: 2;
 }
 
 
@@ -81,7 +82,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 20;
 }
 
 .modal-content {
