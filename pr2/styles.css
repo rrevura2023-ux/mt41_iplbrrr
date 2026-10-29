@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.top-board {
+    height: 100px;
+    background-color: rgb(233, 233, 233);
+}
+.top-board .logo {
+    display: flex;
+    width: 33px;
+    height: 17px;
+    line-height: 6px;
+    justify-content: left;
+}
+.top-board .frame {
+    width: 250px;
+    height: 54px;
+    float: right;
+    margin: 20px 50px;
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    gap: 15px;
+
+}
+.top-board .title {
+    width: 251px;
+    height: 54px;
+    float: left;
+    margin: 35px 50px;
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    justify-content: space-around;
+    font-weight: bold;
+
+}
+.top-board .title img {
+    display: flex;
+}
+.frame .subtitle {
+    width: 100px;
+    height: 33px;
+    margin: 10px 10px;
+    line-height: 32px;
+    font-family: "Roboto Mono", monospace;
+}
+.frame button {
+    background-color: #3366FF;
+    border-radius: 10px;
+    border: none;
+    width: 153px;
+    height: 54px;
+
+    a {
+        color: #e2dbf8;
+        text-decoration: none;
+    }
+}
+
+header {
+    background-color: #e2dbf8;
+    height: 600.24px;
+}
+header h1 {
+    font-size: 60px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    font-family: "Roboto Mono", monospace;
+}
+header .subtitle {
+    color: rgb(168, 168, 168);
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 466px;
+    padding-top: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+header button {
+    display: flex;
+    justify-content: center;
+    background-color: #F8D57E;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+    margin-top: 25px;
+    height: 64px;
+    width: 203px;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+.video {
+    height: 600px;
+    background-color: #F2FAF8;
+}
+.video img {
+   max-width: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   padding: 65px;
+}
+
+.brand {
+    height: 400px;
+}
+.brand img {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 125px;
+    display: flex;
+
+}
+
+.info {
+    height: 728px;
+}
+.skill {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.block {
+  flex: 1;
+  padding: 25px;
+  background-color: darkgray;
+}
+
+.quote {
+    height: 499.53px;
+    background-color: #E5F4F2;
+}
+.quote img {
+    width: 66px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 125px;
+}
+.quote .descript {
+ color: rgb(10, 10, 10);
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 662px;
+    padding-top: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+.quote .autore {
+    color: rgb(203, 203, 203);
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 102px;
+    padding-top: 60px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.contact {
+    height: 502px;
+    background-color: #FCFAF5;
+}
+.contact h1 {
+    font-size: 60px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    font-family: "Roboto Mono", monospace;
+}
+.contact .subtitle {
+color: rgb(168, 168, 168);
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 30px;
+    font-family: "Roboto Mono", monospace;
+}
+.contact button {
+    display: flex;
+    justify-content: center;
+    background-color: #F8D57E;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+    margin-top: 25px;
+    height: 64px;
+    width: 203px;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+}
+
+footer {
+    height: 135px;
+}
+footer .title {
+    width: 251px;
+    height: 54px;
+    float: left;
+    margin: 15px 50px;
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    justify-content: space-around;
+    font-weight: bold;
+    padding-top: 50px;
+
+}
+footer .subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    max-width: 790px;
+    padding-top: 50px;
+
+}
+footer .subtitle .text {
+color: black;
+padding: 15px;
+font-weight: bold;
+
+} 
+
+.link a {
+ padding-bottom: 20px;
+}
+
+.link a img {
+    float: right;
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+}
