@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+body {
+    animation: joinpage 3s alternate;
+}
+
+@keyframes joinpage {
+    0% { opacity: 0%; }
+    100% { opacity: 100%;}
+}
 .top-board {
     height: 100px;
     background-color: rgb(247, 247, 247);
@@ -60,6 +68,9 @@
         font-family: "Roboto Mono", monospace;
     }
 }
+.frame button:hover {
+ background-color: #1750fb;
+}
 
 header {
     background-color: #e2dbf8;
@@ -101,6 +112,16 @@ header button {
     align-items: center;
     font-family: "Roboto Mono", monospace;
     font-size: 18px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header button:hover {
+    background-color: #ffb700;
+    transition: 1s;
 }
 
 .video {
@@ -148,6 +169,12 @@ header button {
     border-radius: 10px;
 }
 
+.skill .block:hover {
+    padding-left: 20px;
+    transition: 2s;
+    background-color: #fcfbfb;
+}
+
 .skill .block img {
     background-color: #d9dbdb;
     width: 40px;
@@ -175,6 +202,17 @@ header button {
     padding-top: 20px;
 }
 
+.skill .block .descript:hover { 
+ color:#bba160;
+ transition: 2s;
+}
+
+
+.skill .block img:hover { 
+    background-color: #ecb43d;
+    transition: 2s;
+}
+
 .quote {
     height: 499.53px;
     background-color: #E5F4F2;
@@ -200,6 +238,11 @@ header button {
     font-family: "Roboto Mono", monospace;
 }
 
+.quote .descript:hover {
+    transition: 2s;
+    color: #98c9a6;
+}
+
 .quote .autore {
     color: rgb(203, 203, 203);
     height: 60px;
@@ -211,6 +254,11 @@ header button {
     max-width: 102px;
     padding-top: 60px;
     font-family: "Roboto Mono", monospace;
+}
+
+.quote .autore:hover {
+    color: #000000;
+    transition: 2s;
 }
 
 .contact {
@@ -253,6 +301,16 @@ header button {
     align-items: center;
     font-family: "Roboto Mono", monospace;
     font-size: 18px;
+}
+
+.contact button:hover {
+    background-color: #ffb700;
+    transition: 1s;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #000000;
 }
 
 footer {
