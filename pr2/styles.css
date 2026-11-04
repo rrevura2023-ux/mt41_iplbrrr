@@ -61,6 +61,11 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
+.frame .subtitle a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .frame button {
     background-color: #3366FF;
     border-radius: 10px;
