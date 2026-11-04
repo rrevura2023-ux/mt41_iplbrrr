@@ -141,7 +141,7 @@ header button:hover {
 }
 
 .video img {
-    max-width: 50%;
+    max-width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
