@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     animation: joinpage 3s alternate;
 }
@@ -8,6 +13,7 @@ body {
     0% { opacity: 0%; }
     100% { opacity: 100%;}
 }
+
 .top-board {
     height: 100px;
     background-color: rgb(247, 247, 247);
@@ -305,8 +311,27 @@ header button:hover {
 
 .contact button:hover {
     background-color: #ffb700;
-    transition: 1s;
+    transition: 1s; 
 }
+
+ .contact .link::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background: #e69e39;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform 0.3s ease;
+ }
+
+ .contact .link:hover::after {
+     transform: scaleX(1);
+     transform-origin: left;
+     background-color: #ff9900;
+ }
 
 .contact a {
     text-decoration: none;
@@ -330,6 +355,16 @@ footer .title {
     font-weight: bold;
 
 }
+
+footer .title .Logo {
+    display: flex;
+    gap: 10px; 
+    width: 30px;
+    height: 30px;                  /* Відстань між логотипом і текстом */
+
+}
+
+
 
 footer .subtitle {
     display: flex;
