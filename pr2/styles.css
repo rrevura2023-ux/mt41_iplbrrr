@@ -3,6 +3,8 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -150,15 +152,22 @@ header button:hover {
     padding: 65px;
 }
 
-.brand {
+.brand-container {
     height: 400px;
 }
 
-.brand img {
-    width: 900px;
-    margin: 0 auto;
-    padding-top: 125px;
+.brand {
     display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 0 auto;
+    
+}
+
+.brand img {
+    padding-top: 70px;
+    display: flex;
+    height: 100px;
 }
 
 .info {
