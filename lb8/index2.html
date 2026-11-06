@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Level 2 Example</title>
+    <style>
+        /* Встановлюємо контейнер з класом "parent" як grid-контейнер з
+фіксованими шириною та висотою. Задаємо розподіл колонок та рядків, а також
+відступи між ними */
+        .parent {
+            width: 100%;
+            /* Займає всю ширину сторінки */
+            height: 800px;
+            /* Фіксована висота */
+            display: grid;
+            /* Включаємо режим сітки */
+            grid-template-columns: 1fr 2fr repeat(3, 1fr);
+            /* Визначаємо
+ширини колонок */
+            grid-template-rows: repeat(3, 1fr) 2fr 1fr;
+            /* Визначаємо
+висоти рядків */
+            grid-column-gap: 10px;
+            /* Відстань між колонками */
+            grid-row-gap: 20px;
+            /* Відстань між рядками */
+        }
+
+        /* Кожен із div елементів має свої координати в сітці, визначені
+через grid-area.
+Наприклад, "1 / 1 / 2 / 3" означає початок в 1 рядку, 1 колонці
+і закінчення у 2 рядку, 3 колонці */
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 3;
+            background-color: lightblue;
+        }
+
+        .div2 {
+            grid-area: 1 / 3 / 6 / 4;
+            background-color: lightgreen;
+        }
+
+        .div3 {
+            grid-area: 4 / 1 / 5 / 2;
+            background-color: lightcoral;
+        }
+
+        .div4 {
+            grid-area: 4 / 2 / 6 / 3;
+            background-color:
+                lightgoldenrodyellow;
+        }
+
+        .div5 {
+            grid-area: 2 / 1 / 4 / 3;
+            background-color: navajowhite;
+        }
+
+        .div6 {
+            grid-area: 5 / 1 / 6 / 2;
+            background-color: darkred;
+        }
+
+        .div7 {
+            grid-area: 1 / 4 / 4 / 6;
+            background-color: grey;
+        }
+
+        .div8 {
+            grid-area: 4 / 4 / 5 / 6;
+            background-color: darkgreen;
+        }
+
+        .div9 {
+            grid-area: 5 / 4 / 6 / 6;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        <div class="div5"> </div>
+        <div class="div6"> </div>
+        <div class="div7"> </div>
+        <div class="div8"> </div>
+        <div class="div9"> </div>
+    </div>
+</body>
+
+</html>
