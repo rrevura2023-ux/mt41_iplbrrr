@@ -461,7 +461,7 @@ footer .socials img {
 
 
     .brand-container {
-        height: auto;
+        height: 215px;
         padding: 30px 20px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -487,7 +487,8 @@ footer .socials img {
     }
 
     .info {
-        height: 1300px;
+        height: 1450px;
+        padding-top: 100px;
     }
 
     .skill {
