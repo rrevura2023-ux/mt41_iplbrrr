@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,8 +11,13 @@ body {
 }
 
 @keyframes joinpage {
-    0% { opacity: 0%; }
-    100% { opacity: 100%;}
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .top-board {
@@ -81,8 +85,9 @@ body {
         font-family: "Roboto Mono", monospace;
     }
 }
+
 .frame button:hover {
- background-color: #1750fb;
+    background-color: #1750fb;
 }
 
 header {
@@ -92,7 +97,6 @@ header {
 
 header h1 {
     font-size: 60px;
-    justify-content: center;
     text-align: center;
     margin: 0;
     padding-top: 100px;
@@ -103,7 +107,6 @@ header .subtitle {
     color: rgb(168, 168, 168);
     height: 60px;
     text-align: center;
-    justify-content: center;
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -161,7 +164,7 @@ header button:hover {
     justify-content: center;
     gap: 70px;
     margin: 0 auto;
-    
+
 }
 
 .brand img {
@@ -187,7 +190,7 @@ header button:hover {
     height: 290px;
     background-color: #f0f0f0;
     border-radius: 10px;
-     
+
 }
 
 .skill .block:hover {
@@ -214,7 +217,7 @@ header button:hover {
     font-weight: bold;
 }
 
-.skill .block .descript { 
+.skill .block .descript {
     line-height: 32px;
     color: #b5b5b6;
     font-family: "Roboto Mono", monospace;
@@ -223,13 +226,13 @@ header button:hover {
     padding-top: 20px;
 }
 
-.skill .block .descript:hover { 
- color:#bba160;
- transition: 2s;
+.skill .block .descript:hover {
+    color: #bba160;
+    transition: 2s;
 }
 
 
-.skill .block img:hover { 
+.skill .block img:hover {
     background-color: #ecb43d;
     transition: 2s;
 }
@@ -328,27 +331,27 @@ header button:hover {
 
 .contact button:hover {
     background-color: #ffb700;
-    transition: 1s; 
+    transition: 1s;
 }
 
- .contact .link::after {
-     content: '';
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-     height: 2px;
-     background: #e69e39;
-     transform: scaleX(0);
-     transform-origin: right;
-     transition: transform 0.3s ease;
- }
+.contact .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e69e39;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
 
- .contact .link:hover::after {
-     transform: scaleX(1);
-     transform-origin: left;
-     background-color: #ff9900;
- }
+.contact .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: #ff9900;
+}
 
 .contact a {
     text-decoration: none;
@@ -356,11 +359,11 @@ header button:hover {
 }
 
 footer {
-   height: 135px;
+    height: 135px;
     display: flex;
-    align-items: center;         
-    justify-content: space-between; 
-    padding: 0 50px;           
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -375,9 +378,9 @@ footer .title {
 
 footer .title .Logo {
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     width: 30px;
-    height: 30px;                  /* Відстань між логотипом і текстом */
+    height: 30px;
 
 }
 
@@ -401,12 +404,160 @@ footer .subtitle .text {
 footer .socials {
     display: flex;
     align-items: center;
-    gap: 15px;                   /* Відстань між іконками соцмереж */
+    gap: 15px;
 }
 
 /* Іконки соцмереж */
 footer .socials img {
-    height: 30px;                /* Однаковий розмір для круглих іконок */
+    height: 30px;
     width: 30px;
     object-fit: contain;
+}
+
+@media (max-width: 360px) {
+    .top-board .frame {
+        display: none;
+    }
+
+    .top-board {
+        height: 80px;
+    }
+
+    .top-board .title {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 25px;
+        font-size: 16px;
+        /* Текст стає трохи меншим */
+        margin-left: 5px;
+    }
+
+    .top-board .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        margin-top: -5px;
+        margin-left: 10px;
+    }
+
+    header {
+        height: 602px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin: 0 auto;
+    }
+
+
+    .video {
+        height: 250px;
+    }
+
+    .video img {
+        max-width: 100%;
+    }
+
+    .brand-container {
+        height: 215px;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+
+    }
+
+    .brand img {
+        display: flex;
+        height: 40px;
+    }
+
+    .info {
+        height: 1499px;
+    }
+
+    .skill {
+        grid-template-columns: 1fr;
+    }
+
+    .skill .block {
+        max-width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .quote {
+        height: 553px;
+    }
+
+    .quote .descript {
+        max-width: 262px;
+    }
+
+    .quote .autore {
+        padding-top: 180px;
+    }
+
+    .contact {
+        height: 511px;
+    }
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact .subtitle {
+        max-width: 300px;
+    }
+    .contact button {
+    margin-top: 100px;
+    }
+
+ footer {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    footer .title {
+        margin: 0;
+    }
+
+    footer .title .Logo {
+        width: auto;
+        height: auto;
+        align-items: center;
+        gap: 12px;
+        font-size: 18px;
+    }
+
+    footer .title .Logo img {
+        height: 24px;
+        width: auto;
+    }
+
+    footer .subtitle {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    footer .subtitle .text {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    footer .socials {
+        gap: 15px;
+    }
+
+    footer .socials img {
+        height: 28px;
+        width: 28px;
+    }
 }
