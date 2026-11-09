@@ -459,22 +459,31 @@ footer .socials img {
         max-width: 100%;
     }
 
+
     .brand-container {
-        height: 215px;
+        height: auto;
+        padding: 30px 20px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 25px 10px;
+        align-items: center;
     }
 
     .brand {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        width: 300px;
-        height: 100px;
-
+        display: contents;
     }
 
     .brand img {
-        display: flex;
-        height: 40px;
+        grid-column: span 4; 
+        justify-self: center;
+        height: 24px;
+        width: auto;
+        max-width: 100%;
+        padding-top: 0;      
+    }
+
+    .brand:first-child img:nth-child(-n+4) {
+        grid-column: span 3;
     }
 
     .info {
