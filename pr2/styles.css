@@ -407,14 +407,13 @@ footer .socials {
     gap: 15px;
 }
 
-/* Іконки соцмереж */
 footer .socials img {
     height: 30px;
     width: 30px;
     object-fit: contain;
 }
 
-@media (max-width: 360px) {
+@media (min-width: 360px) and (max-width: 767px) {
     .top-board .frame {
         display: none;
     }
@@ -445,9 +444,23 @@ footer .socials img {
     }
 
     header h1 {
+        height: unset;
         font-size: 40px;
         margin: 0 auto;
+        font-size: 20px;
     }
+
+     header button {
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+     header .subtitle {
+        height: unset;
+        font-size: 25px;
+    }
+
+    
 
 
     .video {
@@ -574,7 +587,7 @@ footer .socials img {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1031px) {
 
     .top-board {
         height: 100px;
@@ -710,7 +723,7 @@ footer .socials {
 }
 }
 
-@media (max-width: 1032px) {
+@media (min-width: 1032px) and (max-width: 1200px) {
 .top-board {
         height: 100px;
     }
