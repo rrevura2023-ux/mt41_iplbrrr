@@ -709,3 +709,7 @@ footer .socials {
     justify-content: flex-start;
 }
 }
+
+@media (max-width: 1032px) {
+
+}
