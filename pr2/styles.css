@@ -413,6 +413,7 @@ footer .socials img {
     object-fit: contain;
 }
 
+/*Samsung*/
 @media (min-width: 360px) and (max-width: 767px) {
     .top-board .frame {
         display: none;
@@ -450,17 +451,17 @@ footer .socials img {
         font-size: 20px;
     }
 
-     header button {
-    font-size: 25px;
-    margin-top: 60px;
-}
+    header button {
+        font-size: 25px;
+        margin-top: 60px;
+    }
 
-     header .subtitle {
+    header .subtitle {
         height: unset;
         font-size: 25px;
     }
 
-    
+
 
 
     .video {
@@ -587,6 +588,7 @@ footer .socials img {
     }
 }
 
+/*Ipad MINI*/
 @media (min-width: 768px) and (max-width: 1031px) {
 
     .top-board {
@@ -699,32 +701,35 @@ footer .socials img {
         font-size: 30px;
         width: 220px;
     }
-   footer {
-    display: unset;
 
-   }
+    footer {
+        display: unset;
 
-   footer .title {
-    margin: 15px 15px;
-    font-size: 20px;
-    
+    }
+
+    footer .title {
+        margin: 15px 15px;
+        font-size: 20px;
+
+    }
+
+    footer .subtitle {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    footer .socials {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        margin: 15px;
+        justify-content: flex-start;
+    }
 }
 
-footer .subtitle {
-    font-size: 20px;
-    gap: 20px;
-}
-footer .socials {
-    display: flex;
-    gap: 15px;
-    flex-direction: row;
-    margin: 15px;
-    justify-content: flex-start;
-}
-}
-
+/*Ipad PRO 13*/
 @media (min-width: 1032px) and (max-width: 1200px) {
-.top-board {
+    .top-board {
         height: 100px;
     }
 
@@ -832,26 +837,28 @@ footer .socials {
         font-size: 30px;
         width: 220px;
     }
-   footer {
-    display: unset;
 
-   }
+    footer {
+        display: unset;
 
-   footer .title {
-    margin: 15px 15px;
-    font-size: 20px;
-    
-}
+    }
 
-footer .subtitle {
-    font-size: 20px;
-    gap: 20px;
-}
-footer .socials {
-    display: flex;
-    gap: 15px;
-    flex-direction: row;
-    margin: 15px;
-    justify-content: flex-start;
-}
+    footer .title {
+        margin: 15px 15px;
+        font-size: 20px;
+
+    }
+
+    footer .subtitle {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    footer .socials {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        margin: 15px;
+        justify-content: flex-start;
+    }
 }
