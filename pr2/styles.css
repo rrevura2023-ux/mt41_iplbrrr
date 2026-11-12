@@ -459,6 +459,7 @@ footer .socials img {
     header .subtitle {
         height: unset;
         font-size: 25px;
+        width: 300px;
     }
 
 
