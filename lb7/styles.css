@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 body {
     margin: 0;
     font-family: "Roboto Condensed", Arial, sans-serif;
@@ -55,7 +56,8 @@ h3 {
 }
 
 #block-lpnushortcutstop4 .row a {
-    flex: 1 1 25%;              /* 4 колонки */
+    flex: 1 1 25%;
+    /* 4 колонки */
 }
 
 #block-lpnushortcutstop4 .row a div {
@@ -116,12 +118,12 @@ h3 {
 }
 
 /* картка: сірий фон, однакова висота */
-.views-col > div {
+.views-col>div {
     background: #f4f4f4;
 }
 
-.views-col > div > span,
-.views-col > div > span > a {
+.views-col>div>span,
+.views-col>div>span>a {
     display: block;
     height: 100%;
 }
