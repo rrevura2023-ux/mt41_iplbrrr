@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    animation: join 2s alternate;
+}
+@keyframes join {
+    0% {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+header a {
+    transition: 1s;
+}
+
+header a:hover {
+    text-decoration: underline;
+    transition: 2s;
+    color: cadetblue;
+}
+
+    
+
+nav li {
+        margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav h1 {
+    padding-top: 60px;
+}
+
+.Home {
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    animation: Joinhome 4s alternate;
+}
+
+@keyframes Joinhome {
+    0% {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.Home h1 {
+    color: #0654b3;
+    text-align: center;
+}
+
+.Home p {
+    background-color: #ececec;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.Trivia {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    gap: 20px;
+    animation: JoinTrivia 5s alternate;
+}
+
+@keyframes JoinTrivia {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Trivia h2 { 
+    font-size: 16px;
+}
+
+.Trivia img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.Trivia p {
+    font-size: 14px;
+}
+
+.Categories {
+    padding: 20px;
+    margin: 20px 0;
+    animation: JoinOpacity 6s alternate;
+}
+
+.Categories h1 {
+    color: #0654b3;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Categories p {
+    background-color: #ececec;
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: left;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Categories nav {
+  display: flex;
+  color: #0654b3;
+  align-items: center;
+}
+
+@keyframes JoinOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.Categories a {
+    transition: 2s;
+    text-decoration: underline;
+    color: #333;
+}
+
+.Categories a:hover {
+transition: 2s;
+color: #0b6ce3;
+padding: 5px;
+}
+
+.Scores table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: JoinOpacity 6s alternate;
+}
+
+.Scores th,
+.Scores td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.Scores th {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    animation: JoinOpacity 6s alternate;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Contact button {
+    background-color: #0149a0;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 2s;
+}
+
+.Contact button:hover {
+transition: 2s;
+background-color: #250599;
+}
+
+.Contact button a {
+    text-decoration: none; 
+    font-size: 16;
+    font-weight: bold;
+        color: #ddd;
+}
+
+.Subscribe {
+    background-color: #dcdcdc;
+    padding: 40px;
+    width: 200px;
+    border-radius: 20px;
+    animation: JoinOpacity 6s alternate;
+} 
+
+.Subscribe h2 {
+    color: #413e4f;
+    padding-bottom: 20px;
+} 
+
+.Subscribe button {
+    border: none;
+    background-color: #6c5cb1;
+    color: #ffffff;
+    width: 120px;
+    border-radius: 10px;
+    height: 40px;
+    animation: Puls 2s infinite;
+}
+
+@keyframes Puls  {
+    0% {
+        background-color: #4c4278;
+    }
+
+    100% {
+        background-color: #474355;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    animation: JoinOpacity 6s alternate;
+}
+
+footer button {
+    height: 40px;
+    width: 45px;
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+}
+
+footer a {
+    text-decoration: none;
+}
