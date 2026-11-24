@@ -259,5 +259,137 @@ if(data)
 else 
     console.log("Error")*/
 
-var data = prompt("Як ваші справи?", "Okay")
+/*var data = prompt("Як ваші справи?", "Okay")
 console.log(data)
+*/
+
+/* function print(word) {
+    console.log(word + "!");
+}
+
+print("Hello");
+var someNew = "Helloooooo"
+print(someNew);
+
+function add (x, y) {
+    if (x != null && y != null) {
+    var res = Number(x) + Number(y);
+    print("Результат :" + res )
+    } else
+        alert("Еррор")
+}
+
+var user1 = prompt("Перше число", 0)
+var user2 = prompt("Друге число", 0)
+
+add (user1, user2)*/
+/*function arrSum(arr) {
+    var summ = 0
+for(var i = 0; i < arr.length; i++) 
+    summ += arr[i];
+
+    
+console.log("Сума" + summ)
+}
+var arr1 = [5, 7, 6, 7]
+arrSum(arr1)
+
+var arr2 = [5, 7, 6, 7, 10]
+arrSum(arr2)*/
+
+/*function btnClick() {
+    alert("Message")
+}
+var counter = 0
+function btnOneClick(el) {
+    counter++
+    el.innerHTML = "Count:" + counter
+    /*el.name = "New el"
+ alert(el.name)
+}
+
+function userInput(el) {
+    if (el.value == "font"){
+    el.style.fontSize = "20px"
+el.style.transition = "2s"
+el.style.margin = "20px"}
+else if (el.value == "color")
+    el.style.color = "crimson"
+else if (el.value == "bg")
+    el.style.backgroundColor = "black"
+} */
+
+// var block = document.getElementById("some-block")
+// block.innerHTML = "Hello, <b>World</b>"
+// block.style.color = "red";
+// block.style.backgroundColor = "black"
+// block.className = "block";
+
+// console.log(block.className)
+
+// document.getElementById("para").innerHTML = "New Text"
+
+// // var spans = document.getElementsByTagName('span');
+// var spans = document.getElementsByClassName('el_span');
+
+// for (var i = 0; i < spans.length; i++) {
+//     spans[i].style.fontSize = "20px"
+//     spans[i].title = spans[i].innerHTML + "!";
+// }
+
+// function checkForm(el) {
+//     var username = el.username.value
+//     var email = el.email.value
+//     var gender = el.gender.value
+//     var pass = el.password.value
+
+//     var error = "";
+//     if (username.length < 2)
+//         error = "Iм'я знадто мале"
+//     else if (email.length < 2)
+//         error = "Email занадто малий"
+//     else if (!email.includes("@"))
+//         error = "Email не має @"
+//     else if (pass.length < 2)
+//         error = "Pass занадто малий"
+//     else if (gender == null || gender == "")
+//          error = "Gender error"
+
+//     if (error != "") {
+//         document.getElementById("error").innerText = error
+//         return false
+//     }
+
+//     document.getElementById("error").innerText = "";
+//     window.location = "https://rrevura2023-ux.github.io/mt41_iplbrrr/"
+
+//     return false
+// }
+
+
+// var timerid = setTimeout(function() {
+//     alert("Message")
+// }, 7000)
+
+// var id = setInterval(my_func, 1000);
+
+// var counter = 0;
+// function my_func() {
+//     document.getElementById("timer").innerHTML = "Counter:" + counter
+//     counter++
+// }
+
+// function stopInterval() {
+//    // cl
+// arInterval(id);
+//    clearTimeout(timerid)
+// }
+
+// setInterval(function() {
+// console.log("Sec...")
+// }, 2000)
+
+// var date = new Date();
+//date.setHours(23);
+
+// console.log("Час:" + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds())
