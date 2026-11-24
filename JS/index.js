@@ -391,5 +391,7 @@ else if (el.value == "bg")
 
 // var date = new Date();
 //date.setHours(23);
+ 
+test
 
 // console.log("Час:" + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds())
