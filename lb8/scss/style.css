@@ -360,7 +360,6 @@ footer .socials img {
      object-fit: contain;
 }
 
-/*Samsung*/
 @media (min-width: 360px) and (max-width: 768px) {
   .top-board {
     height: 80px;
@@ -500,7 +499,8 @@ footer .socials img {
     width: 28px;
   }
 }
-@media (min-width: 360px) and (max-width: 768px) {
+/*Ipad MINI*/
+@media (min-width: 768px) and (max-width: 1031px) {
   .top-board {
     height: 100px;
   }
@@ -607,7 +607,8 @@ footer .socials img {
     justify-content: flex-start;
   }
 }
-@media (min-width: 360px) and (max-width: 768px) {
+/*Ipad PRO 13*/
+@media (min-width: 1032px) and (max-width: 1200px) {
   .top-board {
     height: 100px;
   }
