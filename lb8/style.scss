@@ -22,15 +22,19 @@ $breakpoints: (
 );
 
 @mixin respond-to($breakpoint) {
-    @if $breakpoint == mobile {
+    @if $breakpoint mobile {
         @media (min-width: 360px) and (max-width: map-get($breakpoints, tablet)) {
             @content;
         }
-    } @else if $breakpoint == tablet {
+    }
+
+    @else if $breakpoint tablet {
         @media (min-width: map-get($breakpoints, tablet)) and (max-width: 1031px) {
             @content;
         }
-    } @else if $breakpoint == desktop {
+    }
+
+    @else if $breakpoint desktop {
         @media (min-width: 1032px) and (max-width: 1200px) {
             @content;
         }
@@ -613,6 +617,7 @@ footer {
         }
     }
 }
+
 @include respond-to(tablet) {
     .top-board {
         height: 100px;

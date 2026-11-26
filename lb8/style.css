@@ -500,7 +500,7 @@ footer .socials img {
     width: 28px;
   }
 }
-@media (min-width: 768px) and (max-width: 1031px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .top-board {
     height: 100px;
   }
@@ -607,7 +607,7 @@ footer .socials img {
     justify-content: flex-start;
   }
 }
-@media (min-width: 1032px) and (max-width: 1200px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .top-board {
     height: 100px;
   }
